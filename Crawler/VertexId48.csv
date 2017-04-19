@@ -1,0 +1,157 @@
+
+
+id,url,Timestamp,Title  1,http://stackoverflow.com/questions/17535514/lucene-highlighter,14:48:03,stored,indexed,tokenized<title:java - Lucene highlighter - Stack Overflow>
+
+id,url,Timestamp,Title  2,http://stackoverflow.com,14:48:08,stored,indexed,tokenized<title:Stack Overflow>
+
+id,url,Timestamp,Title  3,http://stackoverflow.com/questions,14:48:09,stored,indexed,tokenized<title:Newest Questions - Stack Overflow>
+
+id,url,Timestamp,Title  4,http://stackoverflow.com/jobs,14:48:10,stored,indexed,tokenized<title:Developer Jobs, Programming Jobs & More - Stack Overflow>
+
+id,url,Timestamp,Title  5,http://stackoverflow.com/documentation,14:48:10,stored,indexed,tokenized<title:Documentation - Stack Overflow>
+
+id,url,Timestamp,Title  6,http://stackoverflow.com/tags,14:48:11,stored,indexed,tokenized<title:Tags - Stack Overflow>
+
+id,url,Timestamp,Title  7,http://chat.stackoverflow.com,14:48:11,stored,indexed,tokenized<title:all rooms | chat.stackoverflow.com>
+
+id,url,Timestamp,Title  9,http://stackoverflow.com/users,14:48:12,stored,indexed,tokenized<title:Users - Stack Overflow>
+
+id,url,Timestamp,Title  10,https://meta.stackoverflow.com,14:48:12,stored,indexed,tokenized<title:Meta Stack Overflow>
+
+id,url,Timestamp,Title  11,https://stackoverflow.blog,14:48:13,stored,indexed,tokenized<title:Stack Overflow Blog - A destination for all things related to development at Stack Overflow>
+
+id,url,Timestamp,Title  12,http://stackoverflow.com/help,14:48:13,stored,indexed,tokenized<title:Help Center - Stack Overflow>
+
+id,url,Timestamp,Title  13,http://stackexchange.com/legal/privacy-policy,14:48:13,stored,indexed,tokenized<title:Privacy Policy - Stack Exchange>
+
+id,url,Timestamp,Title  14,https://www.stackoverflowbusiness.com,14:48:13,stored,indexed,tokenized<title:Stack Overflow Business | Stack Overflow>
+
+id,url,Timestamp,Title  15,http://stackexchange.com/legal/terms-of-service,14:48:14,stored,indexed,tokenized<title:Terms of Service - Stack Exchange>
+
+id,url,Timestamp,Title  16,https://stackoverflow.com/users/signup,14:48:14,stored,indexed,tokenized<title:Sign Up - Stack Overflow>
+
+id,url,Timestamp,Title  17,https://www.stackoverflowbusiness.com/advertise,14:48:14,stored,indexed,tokenized<title:Home | Advertise on Stack Overflow>
+
+id,url,Timestamp,Title  18,https://stackexchange.com/questions,14:48:15,stored,indexed,tokenized<title:Hot Questions - Stack Exchange>
+
+id,url,Timestamp,Title  19,https://stackoverflow.com/users/login,14:48:15,stored,indexed,tokenized<title:Log In - Stack Overflow>
+
+id,url,Timestamp,Title  20,https://www.stackoverflowbusiness.com/talent,14:48:15,stored,indexed,tokenized<title:Stack Overflow Talent - Hiring Developers | Stack Overflow>
+
+id,url,Timestamp,Title  21,http://stackoverflow.com/tour,14:48:15,stored,indexed,tokenized<title:Tour - Stack Overflow>
+
+id,url,Timestamp,Title  22,https://stackexchange.com/legal,14:48:16,stored,indexed,tokenized<title:Terms of Service - Stack Exchange>
+
+id,url,Timestamp,Title  23,http://lucene.apache.org/core/4_0_0/highlighter/org/apache/lucene/search/highlight/package-summary.html,14:48:16,stored,indexed,tokenized<title:org.apache.lucene.search.highlight (Lucene 4.0.0 API)>
+
+id,url,Timestamp,Title  24,http://stackoverflow.com/company/about,14:48:16,stored,indexed,tokenized<title:About - Stack Overflow - Stack Overflow>
+
+id,url,Timestamp,Title  25,https://stackexchange.com/legal/privacy-policy,14:48:16,stored,indexed,tokenized<title:Privacy Policy - Stack Exchange>
+
+id,url,Timestamp,Title  26,http://stackoverflow.com/questions/tagged/java,14:48:17,stored,indexed,tokenized<title:Newest 'java' Questions - Stack Overflow>
+
+id,url,Timestamp,Title  27,http://stackexchange.com/sites,14:48:17,stored,indexed,tokenized<title:All Sites - Stack Exchange>
+
+id,url,Timestamp,Title  28,http://vnarcher.blogspot.de/2012/04/highlighting-text-with-lucene.html,14:48:18,stored,indexed,tokenized<title:Things happened in my life: Highlighting text with Lucene Highlighter>
+
+id,url,Timestamp,Title  29,http://stackoverflow.com/questions/tagged/lucene,14:48:18,stored,indexed,tokenized<title:Newest 'lucene' Questions - Stack Overflow>
+
+id,url,Timestamp,Title  30,http://stackoverflow.com/questions/tagged/highlighter,14:48:19,stored,indexed,tokenized<title:Newest 'highlighter' Questions - Stack Overflow>
+
+id,url,Timestamp,Title  31,http://stackoverflow.com/users/2528875/abitnew,14:48:20,stored,indexed,tokenized<title:User abitnew - Stack Overflow>
+
+id,url,Timestamp,Title  32,http://stackoverflow.com/users/1628375/femtorgon,14:48:21,stored,indexed,tokenized<title:User femtoRgon - Stack Overflow>
+
+id,url,Timestamp,Title  33,http://stackoverflow.com/users/2564423/user1234,14:48:23,stored,indexed,tokenized<title:User user1234 - Stack Overflow>
+
+id,url,Timestamp,Title  34,http://stackoverflow.com/users/614231/stuckless,14:48:25,stored,indexed,tokenized<title:User stuckless - Stack Overflow>
+
+id,url,Timestamp,Title  35,http://stackoverflow.com/users/4214921/potame,14:48:26,stored,indexed,tokenized<title:User potame - Stack Overflow>
+
+id,url,Timestamp,Title  36,http://stackoverflow.com/users/595305/mike-rodent,14:48:26,stored,indexed,tokenized<title:User mike rodent - Stack Overflow>
+
+id,url,Timestamp,Title  37,http://stackoverflow.com/questions/2997009/problems-using-lucene-highlighter,14:48:27,stored,indexed,tokenized<title:duplication - Problems using Lucene Highlighter - Stack Overflow>
+
+id,url,Timestamp,Title  38,http://stackoverflow.com/questions/3035805/using-lucene-highlighter-along-with-multifieldqueryparser,14:48:29,stored,indexed,tokenized<title:parsing - Using Lucene Highlighter along with MultiFieldQueryParser - Stack Overflow>
+
+id,url,Timestamp,Title  39,http://stackoverflow.com/questions/4566532/solr-worddelimiterfilter-lucene-highlighter,14:48:30,stored,indexed,tokenized<title:java - Solr WordDelimiterFilter + Lucene Highlighter - Stack Overflow>
+
+id,url,Timestamp,Title  40,https://ux.stackexchange.com/questions/107142/how-to-arrange-3x3-thumbnails-when-their-number-is-less-than-6,14:48:31,stored,indexed,tokenized<title:grid - How to arrange 3x3 thumbnails when their number is less than 6? - User Experience Stack Exchange>
+
+id,url,Timestamp,Title  41,https://workplace.stackexchange.com/questions/89396/my-coworker-emailled-me-a-root-password-that-im-not-supposed-to-have-should-i,14:48:31,stored,indexed,tokenized<title:colleagues - My coworker emailled me a root password that I'm not supposed to have. Should I tell my boss, and if so how do I tell without sounding petty? - The Workplace Stack Exchange>
+
+id,url,Timestamp,Title  42,https://worldbuilding.stackexchange.com/questions/78488/a-believable-and-not-irritating-proto-language,14:48:31,stored,indexed,tokenized<title:A believable (and not irritating) proto-language - Worldbuilding Stack Exchange>
+
+id,url,Timestamp,Title  43,https://blender.stackexchange.com/questions/78066/make-a-mesh-be-pure-light,14:48:31,stored,indexed,tokenized<title:Make a mesh be pure light? - Blender Stack Exchange>
+
+id,url,Timestamp,Title  44,http://stackoverflow.com/questions/4620210/getting-the-number-of-hits-in-a-documentdoc-in-lucene,14:48:31,stored,indexed,tokenized<title:java - Getting the number of Hits in a document(doc) in lucene - Stack Overflow>
+
+id,url,Timestamp,Title  45,https://money.stackexchange.com/questions/78715/can-i-use-a-credit-card-in-an-atm-to-withdraw-cash,14:48:31,stored,indexed,tokenized<title:united states - Can I use a credit card in an ATM to withdraw cash? - Personal Finance & Money Stack Exchange>
+
+id,url,Timestamp,Title  46,https://travel.stackexchange.com/questions/91843/what-do-i-need-to-legally-and-unproblematically-take-someone-elses-child-on-a-t,14:48:31,stored,indexed,tokenized<title:usa - What do I need to legally and unproblematically take someone else's child on a trip to West Virginia? - Travel Stack Exchange>
+
+id,url,Timestamp,Title  47,https://security.stackexchange.com/questions/157627/why-are-iphones-so-hard-to-hack,14:48:31,stored,indexed,tokenized<title:ios - Why are iPhones so hard to hack? - Information Security Stack Exchange>
+
+id,url,Timestamp,Title  48,https://electronics.stackexchange.com/questions/300296/what-does-the-value-of-reactive-power-represent-physically,14:48:31,stored,indexed,tokenized<title:passive networks - What does the value of reactive power represent physically? - Electrical Engineering Stack Exchange>
+
+id,url,Timestamp,Title  49,https://workplace.stackexchange.com/questions/89318/impact-of-mentioning-in-an-interview-that-the-cause-of-leaving-the-previous-job,14:48:32,stored,indexed,tokenized<title:interviewing - Impact of mentioning in an interview that the cause of leaving the previous job is a significant change in management? - The Workplace Stack Exchange>
+
+id,url,Timestamp,Title  50,https://physics.stackexchange.com/questions/327551/can-we-add-attraction-forces,14:48:32,stored,indexed,tokenized<title:homework and exercises - Can we add attraction forces? - Physics Stack Exchange>
+
+id,url,Timestamp,Title  51,https://movies.stackexchange.com/questions/71854/do-star-trek-characters-wearing-red-shirts-have-the-highest-death-rate-on-the-or,14:48:32,stored,indexed,tokenized<title:Do Star Trek characters wearing red shirts have the highest death rate on the original show? - Movies & TV Stack Exchange>
+
+id,url,Timestamp,Title  52,https://puzzling.stackexchange.com/questions/51123/star-crossword-and-anagrams,14:48:32,stored,indexed,tokenized<title:Star Crossword, and anagrams - Puzzling Stack Exchange>
+
+id,url,Timestamp,Title  53,https://retrocomputing.stackexchange.com/questions/2697/could-you-see-what-you-are-typing-in-a-teletype,14:48:32,stored,indexed,tokenized<title:history - Could you see what you are typing in a Teletype? - Retrocomputing Stack Exchange>
+
+id,url,Timestamp,Title  54,https://stats.stackexchange.com/questions/274336/gradient-descent-doesnt-find-solution-to-ordinary-least-squares-on-this-dataset,14:48:32,stored,indexed,tokenized<title:regression - Gradient descent doesn't find solution to ordinary least squares on this dataset? - Cross Validated>
+
+id,url,Timestamp,Title  55,https://photo.stackexchange.com/questions/88749/notes-while-taking-photos,14:48:32,stored,indexed,tokenized<title:shooting technique - Notes while taking photos - Photography Stack Exchange>
+
+id,url,Timestamp,Title  56,https://worldbuilding.stackexchange.com/questions/78445/how-to-have-believable-society-where-people-are-sorted-into-their-roles,14:48:32,stored,indexed,tokenized<title:reality check - How to have believable society where people are sorted into their roles? - Worldbuilding Stack Exchange>
+
+id,url,Timestamp,Title  57,https://mathoverflow.net/questions/267567/can-khovanov-homology-have-arbitrarily-large-torsion,14:48:32,stored,indexed,tokenized<title:gt.geometric topology - Can Khovanov homology have arbitrarily large torsion? - MathOverflow>
+
+id,url,Timestamp,Title  58,https://music.stackexchange.com/questions/56404/why-do-we-have-inversions-but-not-permutations,14:48:32,stored,indexed,tokenized<title:theory - Why do we have inversions but not permutations? - Music: Practice & Theory Stack Exchange>
+
+id,url,Timestamp,Title  59,https://academia.stackexchange.com/questions/88189/how-to-react-when-a-team-of-colleagues-obviously-made-up-some-results,14:48:32,stored,indexed,tokenized<title:publications - How to react when a team of colleagues obviously made up some results? - Academia Stack Exchange>
+
+id,url,Timestamp,Title  60,https://codegolf.stackexchange.com/questions/116933/bernardino-identifies-unaltered-dollar-words,14:48:32,stored,indexed,tokenized<title:code golf - Bernardino identifies unaltered dollar words - Programming Puzzles & Code Golf Stack Exchange>
+
+id,url,Timestamp,Title  61,https://movies.stackexchange.com/questions/71864/how-does-eddard-stark-know-that-bran-saw-cersei-and-jaime-together,14:48:32,stored,indexed,tokenized<title:plot explanation - How does Eddard Stark know that Bran saw Cersei and Jaime together? - Movies & TV Stack Exchange>
+
+id,url,Timestamp,Title  62,http://stackoverflow.com/questions/5087258/lucene-fast-vector-highlightor-fragments,14:48:32,stored,indexed,tokenized<title:highlighter - Lucene Fast Vector Highlightor fragments - Stack Overflow>
+
+id,url,Timestamp,Title  63,https://codereview.stackexchange.com/questions/161172/project-euler-problem-4-palindromic-number,14:48:33,stored,indexed,tokenized<title:c# - Project Euler Problem #4 - Palindromic number - Code Review Stack Exchange>
+
+id,url,Timestamp,Title  64,https://academia.stackexchange.com/questions/88202/what-is-the-right-place-to-acknowledge-another-simultaneous-paper-with-the-sam,14:48:33,stored,indexed,tokenized<title:publications - What is the right place to acknowledge another (simultaneous) paper with the same result? - Academia Stack Exchange>
+
+id,url,Timestamp,Title  65,https://codegolf.stackexchange.com/questions/116772/make-me-a-smore,14:48:33,stored,indexed,tokenized<title:code golf - Make me a s'more! - Programming Puzzles & Code Golf Stack Exchange>
+
+id,url,Timestamp,Title  66,http://stackoverflow.com/questions/5623550/kwic-with-lucene-3-1,14:48:33,stored,indexed,tokenized<title:highlighter - KWIC with lucene 3.1 - Stack Overflow>
+
+id,url,Timestamp,Title  67,https://data.stackexchange.com,14:48:34,stored,indexed,tokenized<title:Stack Exchange Data Explorer>
+
+id,url,Timestamp,Title  68,http://stackoverflow.com/questions/8506637/lucene-and-highlighted-text-font-issues,14:48:34,stored,indexed,tokenized<title:Lucene and Highlighted text font issues - Stack Overflow>
+
+id,url,Timestamp,Title  69,http://stackoverflow.com/questions/17570006/get-the-context-of-match-in-lucene,14:48:36,stored,indexed,tokenized<title:java - Get the "context" of match in Lucene - Stack Overflow>
+
+id,url,Timestamp,Title  70,https://serverfault.com,14:48:36,stored,indexed,tokenized<title:Server Fault>
+
+id,url,Timestamp,Title  71,https://gamedev.stackexchange.com,14:48:36,stored,indexed,tokenized<title:Game Development Stack Exchange>
+
+id,url,Timestamp,Title  72,https://superuser.com,14:48:37,stored,indexed,tokenized<title:Super User>
+
+id,url,Timestamp,Title  73,http://stackoverflow.com/questions/32380011/lucene-5-3-highlighter-getbestfragments-not-working,14:48:37,stored,indexed,tokenized<title:java - Lucene 5.3 Highlighter getBestFragments() not working - Stack Overflow>
+
+id,url,Timestamp,Title  74,https://creativecommons.org/licenses/by-sa/3.0,14:48:37,stored,indexed,tokenized<title:Creative Commons — Attribution-ShareAlike 3.0 Unported — CC BY-SA 3.0>
+
+id,url,Timestamp,Title  75,http://stackoverflow.com/questions/38109913/how-can-i-improve-performance-of-lucene-highlighter-operations,14:48:38,stored,indexed,tokenized<title:How can I improve performance of Lucene Highlighter operations? - Stack Overflow>
+
+id,url,Timestamp,Title  76,https://stackoverflow.blog/2009/06/25/attribution-required,14:48:38,stored,indexed,tokenized<title:Attribution Required - Stack Overflow Blog>
+
+id,url,Timestamp,Title  77,http://stackoverflow.com/company/work-here,14:48:39,stored,indexed,tokenized<title:We're hiring! - Stack Overflow - Stack Overflow>
+
+id,url,Timestamp,Title  78,http://stackoverflow.com/jobs/directory/developer-jobs,14:48:40,stored,indexed,tokenized<title:Developer Jobs Directory - Stack Overflow>
+
+id,url,Timestamp,Title  79,http://stackoverflow.com/contact,14:48:40,stored,indexed,tokenized<title:Help Center - Contact Us - Stack Overflow>

@@ -1,0 +1,153 @@
+
+
+id,url,Timestamp,Title  1,http://stackoverflow.com/questions/17535514/lucene-highlighter,2017-04-19 22:29:27,java - Lucene highlighter - Stack Overflow
+
+id,url,Timestamp,Title  2,http://stackoverflow.com,2017-04-19 22:29:29,Stack Overflow
+
+id,url,Timestamp,Title  3,http://stackoverflow.com/questions,2017-04-19 22:29:29,Newest Questions - Stack Overflow
+
+id,url,Timestamp,Title  4,http://stackoverflow.com/jobs,2017-04-19 22:29:30,Developer Jobs, Programming Jobs & More - Stack Overflow
+
+id,url,Timestamp,Title  5,http://stackoverflow.com/documentation,2017-04-19 22:29:31,Documentation - Stack Overflow
+
+id,url,Timestamp,Title  6,http://chat.stackoverflow.com,2017-04-19 22:29:31,all rooms | chat.stackoverflow.com
+
+id,url,Timestamp,Title  7,http://stackoverflow.com/tags,2017-04-19 22:29:32,Tags - Stack Overflow
+
+id,url,Timestamp,Title  8,http://stackoverflow.com/users,2017-04-19 22:29:32,Users - Stack Overflow
+
+id,url,Timestamp,Title  9,https://meta.stackoverflow.com,2017-04-19 22:29:32,Meta Stack Overflow
+
+id,url,Timestamp,Title  10,https://stackoverflow.blog,2017-04-19 22:29:33,Stack Overflow Blog - A destination for all things related to development at Stack Overflow
+
+id,url,Timestamp,Title  11,https://stackexchange.com/sites,2017-04-19 22:29:33,All Sites - Stack Exchange
+
+id,url,Timestamp,Title  12,http://stackoverflow.com/help,2017-04-19 22:29:33,Help Center - Stack Overflow
+
+id,url,Timestamp,Title  13,https://www.stackoverflowbusiness.com,2017-04-19 22:29:34,Stack Overflow Business | Stack Overflow
+
+id,url,Timestamp,Title  14,http://stackexchange.com/legal/privacy-policy,2017-04-19 22:29:34,Privacy Policy - Stack Exchange
+
+id,url,Timestamp,Title  15,https://www.stackoverflowbusiness.com/advertise,2017-04-19 22:29:34,Home | Advertise on Stack Overflow
+
+id,url,Timestamp,Title  16,http://stackexchange.com/legal/terms-of-service,2017-04-19 22:29:34,Terms of Service - Stack Exchange
+
+id,url,Timestamp,Title  17,https://stackexchange.com/newsletters/newsletter,2017-04-19 22:29:35,
+
+id,url,Timestamp,Title  18,https://www.stackoverflowbusiness.com/talent,2017-04-19 22:29:35,Stack Overflow Talent - Hiring Developers | Stack Overflow
+
+id,url,Timestamp,Title  19,http://stackoverflow.com/tour,2017-04-19 22:29:36,Tour - Stack Overflow
+
+id,url,Timestamp,Title  20,http://lucene.apache.org/core/4_0_0/highlighter/org/apache/lucene/search/highlight/package-summary.html,2017-04-19 22:29:36,org.apache.lucene.search.highlight (Lucene 4.0.0 API)
+
+id,url,Timestamp,Title  21,https://stackexchange.com/questions,2017-04-19 22:29:36,Hot Questions - Stack Exchange
+
+id,url,Timestamp,Title  22,http://stackoverflow.com/company/about,2017-04-19 22:29:36,About - Stack Overflow - Stack Overflow
+
+id,url,Timestamp,Title  23,https://stackexchange.com/legal,2017-04-19 22:29:37,Terms of Service - Stack Exchange
+
+id,url,Timestamp,Title  24,http://stackoverflow.com/questions/tagged/java,2017-04-19 22:29:37,Newest 'java' Questions - Stack Overflow
+
+id,url,Timestamp,Title  25,https://stackexchange.com/legal/privacy-policy,2017-04-19 22:29:37,Privacy Policy - Stack Exchange
+
+id,url,Timestamp,Title  26,http://stackoverflow.com/questions/tagged/lucene,2017-04-19 22:29:38,Newest 'lucene' Questions - Stack Overflow
+
+id,url,Timestamp,Title  27,http://vnarcher.blogspot.de/2012/04/highlighting-text-with-lucene.html,2017-04-19 22:29:38,Things happened in my life: Highlighting text with Lucene Highlighter
+
+id,url,Timestamp,Title  28,http://stackexchange.com/sites,2017-04-19 22:29:38,All Sites - Stack Exchange
+
+id,url,Timestamp,Title  29,http://stackoverflow.com/questions/tagged/highlighter,2017-04-19 22:29:39,Newest 'highlighter' Questions - Stack Overflow
+
+id,url,Timestamp,Title  30,http://stackoverflow.com/users/2528875/abitnew,2017-04-19 22:29:40,User abitnew - Stack Overflow
+
+id,url,Timestamp,Title  31,http://stackoverflow.com/users/1628375/femtorgon,2017-04-19 22:29:41,User femtoRgon - Stack Overflow
+
+id,url,Timestamp,Title  32,http://stackoverflow.com/users/2564423/user1234,2017-04-19 22:29:44,User user1234 - Stack Overflow
+
+id,url,Timestamp,Title  33,http://stackoverflow.com/users/614231/stuckless,2017-04-19 22:29:46,User stuckless - Stack Overflow
+
+id,url,Timestamp,Title  34,http://stackoverflow.com/users/4214921/potame,2017-04-19 22:29:47,User potame - Stack Overflow
+
+id,url,Timestamp,Title  35,http://stackoverflow.com/users/595305/mike-rodent,2017-04-19 22:29:48,User mike rodent - Stack Overflow
+
+id,url,Timestamp,Title  36,http://stackoverflow.com/questions/2997009/problems-using-lucene-highlighter,2017-04-19 22:29:49,duplication - Problems using Lucene Highlighter - Stack Overflow
+
+id,url,Timestamp,Title  37,http://stackoverflow.com/questions/3035805/using-lucene-highlighter-along-with-multifieldqueryparser,2017-04-19 22:29:50,parsing - Using Lucene Highlighter along with MultiFieldQueryParser - Stack Overflow
+
+id,url,Timestamp,Title  38,http://stackoverflow.com/questions/4566532/solr-worddelimiterfilter-lucene-highlighter,2017-04-19 22:29:51,java - Solr WordDelimiterFilter + Lucene Highlighter - Stack Overflow
+
+id,url,Timestamp,Title  39,http://stackoverflow.com/questions/4620210/getting-the-number-of-hits-in-a-documentdoc-in-lucene,2017-04-19 22:29:52,java - Getting the number of Hits in a document(doc) in lucene - Stack Overflow
+
+id,url,Timestamp,Title  40,https://crypto.stackexchange.com/questions/46716/is-there-a-standard-or-widely-accepted-convention-for-magic-constants-in-crypt,2017-04-19 22:29:52,Is there a standard, or widely accepted convention, for magic constants in crypto software? - Cryptography Stack Exchange
+
+id,url,Timestamp,Title  42,https://mathematica.stackexchange.com/questions/143987/optimizing-mathematica-code,2017-04-19 22:29:52,2017-04-19 22:29:52,list manipulation - Optimizing Mathematica Code - Mathematica Stack Exchange
+
+id,url,Timestamp,Title  43,https://rpg.stackexchange.com/questions/98392/in-combat-do-all-skill-checks-require-a-pcs-action-to-perform,2017-04-19 22:29:52,dnd 5e - In combat, do all skill checks require a PC's Action to perform? - Role-playing Games Stack Exchange
+
+id,url,Timestamp,Title  44,https://aviation.stackexchange.com/questions/37165/why-do-all-commercial-aircraft-have-carpets,2017-04-19 22:29:52,airline operations - Why do all commercial aircraft have carpets? - Aviation Stack Exchange
+
+id,url,Timestamp,Title  45,https://physics.stackexchange.com/questions/327186/why-dont-molecules-of-a-gas-settle,2017-04-19 22:29:52,Why don't molecules of a gas settle? - Physics Stack Exchange
+
+id,url,Timestamp,Title  46,https://worldbuilding.stackexchange.com/questions/78488/a-believable-and-not-irritating-proto-language,2017-04-19 22:29:52,A believable (and not irritating) proto-language - Worldbuilding Stack Exchange
+
+id,url,Timestamp,Title  47,https://retrocomputing.stackexchange.com/questions/2697/could-you-see-what-you-are-typing-in-a-teletype,2017-04-19 22:29:52,history - Could you see what you are typing in a Teletype? - Retrocomputing Stack Exchange
+
+id,url,Timestamp,Title  48,https://codegolf.stackexchange.com/questions/116986/calculate-a-users-reputation,2017-04-19 22:29:52,code golf - Calculate a User's Reputation - Programming Puzzles & Code Golf Stack Exchange
+
+id,url,Timestamp,Title  49,https://buddhism.stackexchange.com/questions/20160/disenchanted-with-buddhism,2017-04-19 22:29:52,meditation - Disenchanted with Buddhism - Buddhism Stack Exchange
+
+id,url,Timestamp,Title  50,https://german.stackexchange.com/questions/36192/suffix-au-at-end-of-town-name,2017-04-19 22:29:52,etymology - Suffix "au" at end of town name? - German Language Stack Exchange
+
+id,url,Timestamp,Title  51,https://english.stackexchange.com/questions/385089/if-i-define-the-word-risk-as-chances-of-losing-what-would-be-a-word-for-chanc,2017-04-19 22:29:52,If I define the word risk as "chances of losing" what would be a word for "chances of winning/gaining"? - English Language & Usage Stack Exchange
+
+id,url,Timestamp,Title  52,https://codereview.stackexchange.com/questions/161172/project-euler-problem-4-palindromic-number,2017-04-19 22:29:52,c# - Project Euler Problem #4 - Palindromic number - Code Review Stack Exchange
+
+id,url,Timestamp,Title  53,https://puzzling.stackexchange.com/questions/51134/misplaced-matters-when-words-lost-their-way,2017-04-19 22:29:52,rhyme - Misplaced Matters - When Words Lost Their Way! - Puzzling Stack Exchange
+
+id,url,Timestamp,Title  54,https://magento.stackexchange.com/questions/170751/magento-1-model-rewrite-vs-event-dispatching-best-strategy,2017-04-19 22:29:52,module - Magento 1: model rewrite vs event dispatching, best strategy? - Magento Stack Exchange
+
+id,url,Timestamp,Title  55,https://space.stackexchange.com/questions/21144/is-transit-5b-5-a-k-a-oscar-2-really-still-kind-of-active,2017-04-19 22:29:52,artificial satellite - Is Transit 5B-5 a.k.a. Oscar 2 really "still kind of 'active'"? - Space Exploration Stack Exchange
+
+id,url,Timestamp,Title  56,https://workplace.stackexchange.com/questions/89367/hair-length-as-part-of-the-dresscode,2017-04-19 22:29:52,professionalism - Hair length as part of the dresscode - The Workplace Stack Exchange
+
+id,url,Timestamp,Title  57,https://math.stackexchange.com/questions/2241955/analysis-convergence-test,2017-04-19 22:29:53,sequences and series - Analysis convergence test - Mathematics Stack Exchange
+
+id,url,Timestamp,Title  58,https://worldbuilding.stackexchange.com/questions/78513/how-would-an-independent-illegal-and-secret-group-of-assassins-accept-assignmen,2017-04-19 22:29:53,society - How would an independent, illegal and secret group of assassins accept assignments? - Worldbuilding Stack Exchange
+
+id,url,Timestamp,Title  59,https://codegolf.stackexchange.com/questions/116999/what-characters-are-more-common-in-my-md2-hash,2017-04-19 22:29:53,code golf - What characters are more common in my MD2 hash? - Programming Puzzles & Code Golf Stack Exchange
+
+id,url,Timestamp,Title  60,http://stackoverflow.com/questions/5087258/lucene-fast-vector-highlightor-fragments,2017-04-19 22:29:53,highlighter - Lucene Fast Vector Highlightor fragments - Stack Overflow
+
+id,url,Timestamp,Title  61,https://askubuntu.com/questions/906674/accidentally-removed-bin-how-to-restore-it,2017-04-19 22:29:53,command line - Accidentally removed /bin how to restore it? - Ask Ubuntu
+
+id,url,Timestamp,Title  62,https://serverfault.com/questions/844677/server-wiped-after-yum-remove-python,2017-04-19 22:29:53,centos - Server wiped after "yum remove python" - Server Fault
+
+id,url,Timestamp,Title  63,https://stats.stackexchange.com/questions/274566/is-the-following-inequality-correct-how-to-prove-it,2017-04-19 22:29:53,probability - Is the following inequality correct? How to prove it? - Cross Validated
+
+id,url,Timestamp,Title  64,https://codegolf.stackexchange.com/questions/116933/bernardino-identifies-unaltered-dollar-words,2017-04-19 22:29:54,code golf - Bernardino identifies unaltered dollar words - Programming Puzzles & Code Golf Stack Exchange
+
+id,url,Timestamp,Title  65,http://stackoverflow.com/questions/5623550/kwic-with-lucene-3-1,2017-04-19 22:29:54,highlighter - KWIC with lucene 3.1 - Stack Overflow
+
+id,url,Timestamp,Title  66,,https://data.stackexchange.com                      ,2017-04-19 22:29:54                   ,Ask Ubuntu
+
+id,url,Timestamp,Title  67,https://serverfault.com,2017-04-19 22:29:54,Server Fault
+
+id,url,Timestamp,Title  68,http://stackoverflow.com/questions/8506637/lucene-and-highlighted-text-font-issues,2017-04-19 22:29:55,Lucene and Highlighted text font issues - Stack Overflow
+
+id,url,Timestamp,Title  69,http://stackoverflow.com/questions/17570006/get-the-context-of-match-in-lucene,2017-04-19 22:29:56,java - Get the "context" of match in Lucene - Stack Overflow
+
+id,url,Timestamp,Title  70,http://stackoverflow.com/questions/32380011/lucene-5-3-highlighter-getbestfragments-not-working,2017-04-19 22:29:57,java - Lucene 5.3 Highlighter getBestFragments() not working - Stack Overflow
+
+id,url,Timestamp,Title  71,https://wordpress.stackexchange.com,2017-04-19 22:29:57,WordPress Development Stack Exchange
+
+id,url,Timestamp,Title  72,http://stackoverflow.com/questions/38109913/how-can-i-improve-performance-of-lucene-highlighter-operations,2017-04-19 22:29:58,How can I improve performance of Lucene Highlighter operations? - Stack Overflow
+
+id,url,Timestamp,Title  73,https://creativecommons.org/licenses/by-sa/3.0,2017-04-19 22:29:58,Creative Commons — Attribution-ShareAlike 3.0 Unported — CC BY-SA 3.0
+
+id,url,Timestamp,Title  74,http://stackoverflow.com/company/work-here,2017-04-19 22:29:59,We're hiring! - Stack Overflow - Stack Overflow
+
+id,url,Timestamp,Title  75,https://stackoverflow.blog/2009/06/25/attribution-required,2017-04-19 22:29:59,Attribution Required - Stack Overflow Blog
+
+id,url,Timestamp,Title  76,http://stackoverflow.com/jobs/directory/developer-jobs,2017-04-19 22:29:59,Developer Jobs Directory - Stack Overflow
+
+id,url,Timestamp,Title  77,http://stackoverflow.com/contact,2017-04-19 22:30:00,Help Center - Contact Us - Stack Overflow

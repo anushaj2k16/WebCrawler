@@ -1,0 +1,156 @@
+
+
+id,url,Timestamp,Title  1,http://stackoverflow.com/questions/17535514/lucene-highlighter,22:19:59,java - Lucene highlighter - Stack Overflow
+
+id,url,Timestamp,Title  2,http://stackoverflow.com,22:20:04,Stack Overflow
+
+id,url,Timestamp,Title  3,http://stackoverflow.com/questions,22:20:05,Newest Questions - Stack Overflow
+
+id,url,Timestamp,Title  4,http://stackoverflow.com/jobs,22:20:06,Developer Jobs, Programming Jobs & More - Stack Overflow
+
+id,url,Timestamp,Title  5,http://stackoverflow.com/documentation,22:20:07,Documentation - Stack Overflow
+
+id,url,Timestamp,Title  6,http://chat.stackoverflow.com,22:20:07,all rooms | chat.stackoverflow.com
+
+id,url,Timestamp,Title  7,http://stackoverflow.com/tags,22:20:07,Tags - Stack Overflow
+
+id,url,Timestamp,Title  8,http://stackoverflow.com/users,22:20:08,Users - Stack Overflow
+
+id,url,Timestamp,Title  9,http://stackoverflow.com/help,22:20:09,Help Center - Stack Overflow
+
+id,url,Timestamp,Title  10,http://lucene.apache.org/core/4_0_0/highlighter/org/apache/lucene/search/highlight/package-summary.html,22:20:12,org.apache.lucene.search.highlight (Lucene 4.0.0 API)
+
+id,url,Timestamp,Title  11,http://vnarcher.blogspot.de/2012/04/highlighting-text-with-lucene.html,22:20:14,Things happened in my life: Highlighting text with Lucene Highlighter
+
+id,url,Timestamp,Title  12,https://meta.stackoverflow.com,22:20:15,Meta Stack Overflow
+
+id,url,Timestamp,Title  13,https://www.stackoverflowbusiness.com,22:20:15,Stack Overflow Business | Stack Overflow
+
+id,url,Timestamp,Title  14,https://stackexchange.com/sites,22:20:15,All Sites - Stack Exchange
+
+id,url,Timestamp,Title  15,https://stackoverflow.blog,22:20:15,Stack Overflow Blog - A destination for all things related to development at Stack Overflow
+
+id,url,Timestamp,Title  16,https://www.stackoverflowbusiness.com/advertise,22:20:16,Home | Advertise on Stack Overflow
+
+id,url,Timestamp,Title  17,https://stackexchange.com,22:20:16,Hot Questions - Stack Exchange
+
+id,url,Timestamp,Title  18,http://stackoverflow.com/tour,22:20:16,Tour - Stack Overflow
+
+id,url,Timestamp,Title  19,http://stackoverflow.com/company/about,22:20:16,About - Stack Overflow - Stack Overflow
+
+id,url,Timestamp,Title  20,http://stackexchange.com/legal/privacy-policy,22:20:17,Privacy Policy - Stack Exchange
+
+id,url,Timestamp,Title  21,https://www.stackoverflowbusiness.com/talent,22:20:17,Stack Overflow Talent - Hiring Developers | Stack Overflow
+
+id,url,Timestamp,Title  22,http://stackexchange.com/legal/terms-of-service,22:20:17,Terms of Service - Stack Exchange
+
+id,url,Timestamp,Title  23,http://stackoverflow.com/questions/tagged/java,22:20:17,Newest 'java' Questions - Stack Overflow
+
+id,url,Timestamp,Title  24,https://stackexchange.com/questions,22:20:18,Hot Questions - Stack Exchange
+
+id,url,Timestamp,Title  25,http://stackoverflow.com/questions/tagged/lucene,22:20:18,Newest 'lucene' Questions - Stack Overflow
+
+id,url,Timestamp,Title  26,https://stackexchange.com/legal,22:20:19,Terms of Service - Stack Exchange
+
+id,url,Timestamp,Title  27,http://stackoverflow.com/questions/tagged/highlighter,22:20:19,Newest 'highlighter' Questions - Stack Overflow
+
+id,url,Timestamp,Title  28,https://stackexchange.com/legal/privacy-policy,22:20:19,Privacy Policy - Stack Exchange
+
+id,url,Timestamp,Title  29,http://stackexchange.com/sites,22:20:20,All Sites - Stack Exchange
+
+id,url,Timestamp,Title  30,http://stackoverflow.com/users/2528875/abitnew,22:20:20,User abitnew - Stack Overflow
+
+id,url,Timestamp,Title  31,http://stackoverflow.com/users/1628375/femtorgon,22:20:21,User femtoRgon - Stack Overflow
+
+id,url,Timestamp,Title  32,http://stackoverflow.com/users/2564423/user1234,22:20:23,User user1234 - Stack Overflow
+
+id,url,Timestamp,Title  33,http://stackoverflow.com/users/614231/stuckless,22:20:24,User stuckless - Stack Overflow
+
+id,url,Timestamp,Title  34,http://stackoverflow.com/users/4214921/potame,22:20:25,User potame - Stack Overflow
+
+id,url,Timestamp,Title  35,http://stackoverflow.com/users/595305/mike-rodent,22:20:26,User mike rodent - Stack Overflow
+
+id,url,Timestamp,Title  36,http://stackoverflow.com/questions/2997009/problems-using-lucene-highlighter,22:20:27,duplication - Problems using Lucene Highlighter - Stack Overflow
+
+id,url,Timestamp,Title  37,https://superuser.com/questions/1199917/what-is-the-d-shaped-icon-next-to-my-usb-c-port,22:20:27,usb c - What is the D-shaped icon next to my USB-C port? - Super User
+
+id,url,Timestamp,Title  38,https://skeptics.stackexchange.com/questions/38024/did-einstein-say-this-about-jesus,22:20:27,quotes - Did Einstein say this about Jesus? - Skeptics Stack Exchange
+
+id,url,Timestamp,Title  39,https://travel.stackexchange.com/questions/91931/how-to-spend-a-night-in-an-unknown-city-without-an-hotel-is-there-a-guide-or-re,22:20:27,tips and tricks - How to spend a night in an unknown city without an hotel? Is there a guide or resource online? - Travel Stack Exchange
+
+id,url,Timestamp,Title  40,https://space.stackexchange.com/questions/21140/how-can-we-transmit-a-date-to-another-species,22:20:27,time - How can we transmit a date to another species? - Space Exploration Stack Exchange
+
+id,url,Timestamp,Title  41,https://codereview.stackexchange.com/questions/161172/project-euler-problem-4-palindromic-number,22:20:27,c# - Project Euler Problem #4 - Palindromic number - Code Review Stack Exchange
+
+id,url,Timestamp,Title  42,https://workplace.stackexchange.com/questions/89367/hair-length-as-part-of-the-dresscode,22:20:27,professionalism - Hair length as part of the dresscode - The Workplace Stack Exchange
+
+id,url,Timestamp,Title  43,https://buddhism.stackexchange.com/questions/20160/disenchanted-with-buddhism,22:20:27,meditation - Disenchanted with Buddhism - Buddhism Stack Exchange
+
+id,url,Timestamp,Title  44,http://stackoverflow.com/questions/3035805/using-lucene-highlighter-along-with-multifieldqueryparser,22:20:28,parsing - Using Lucene Highlighter along with MultiFieldQueryParser - Stack Overflow
+
+id,url,Timestamp,Title  45,https://scifi.stackexchange.com/questions/157559/whats-the-worst-thing-anyone-could-do-in-a-fast-food-restaurant,22:20:28,terry pratchett - What's the worst thing anyone could do in a fast-food restaurant? - Science Fiction & Fantasy Stack Exchange
+
+id,url,Timestamp,Title  46,https://academia.stackexchange.com/questions/88266/the-meaning-of-if-any-in-journal-print-charges-description,22:20:28,publications - The meaning of "if any" in journal print charges description - Academia Stack Exchange
+
+id,url,Timestamp,Title  47,https://physics.stackexchange.com/questions/327551/can-we-add-attraction-forces,22:20:28,homework and exercises - Can we add attraction forces? - Physics Stack Exchange
+
+id,url,Timestamp,Title  48,https://math.stackexchange.com/questions/2241040/what-is-the-symbolic-form-of-there-does-not-exist-a-largest-natural-number,22:20:28,discrete mathematics - What is the symbolic form of "there does not exist a largest natural number " - Mathematics Stack Exchange
+
+id,url,Timestamp,Title  49,https://ux.stackexchange.com/questions/107142/how-to-arrange-3x3-thumbnails-when-their-number-is-less-than-6,22:20:29,grid - How to arrange 3x3 thumbnails when their number is less than 6? - User Experience Stack Exchange
+
+id,url,Timestamp,Title  50,https://superuser.com,22:20:29,Super User
+
+id,url,Timestamp,Title  51,https://workplace.stackexchange.com/questions/89396/my-coworker-emailed-me-a-root-password-that-im-not-supposed-to-have-should-i-t,22:20:29,colleagues - My coworker emailed me a root password that I'm not supposed to have. Should I tell my boss, and if so how do I tell without sounding petty? - The Workplace Stack Exchange
+
+id,url,Timestamp,Title  52,https://academia.stackexchange.com/questions/88189/how-to-react-when-a-team-of-colleagues-obviously-made-up-some-results,22:20:29,publications - How to react when a team of colleagues obviously made up some results? - Academia Stack Exchange
+
+id,url,Timestamp,Title  53,https://aviation.stackexchange.com/questions/37165/why-do-all-commercial-aircraft-have-carpets,22:20:29,airline operations - Why do all commercial aircraft have carpets? - Aviation Stack Exchange
+
+id,url,Timestamp,Title  54,https://tex.stackexchange.com/questions/365484/displaying-fractions-in-line-in-equation-mode,22:20:29,displaying fractions in line in equation mode - TeX - LaTeX Stack Exchange
+
+id,url,Timestamp,Title  55,https://worldbuilding.stackexchange.com/questions/78565/what-could-be-a-valid-reason-for-an-entire-section-of-a-continent-to-remain-unex,22:20:29,humans - What could be a valid reason for an entire section of a continent to remain unexplored and undiscovered, by the rest of the world in medieval times? - Worldbuilding Stack Exchange
+
+id,url,Timestamp,Title  56,https://rpg.stackexchange.com/questions/98397/can-multiple-characters-cast-concentration-spells-from-the-same-item-by-passing,22:20:29,dnd 5e - Can multiple characters cast concentration spells from the same item by passing it around? - Role-playing Games Stack Exchange
+
+id,url,Timestamp,Title  57,https://woodworking.stackexchange.com/questions/5871/which-direction-does-wood-expand,22:20:29,which direction does wood expand? - Woodworking Stack Exchange
+
+id,url,Timestamp,Title  58,https://retrocomputing.stackexchange.com/questions/2697/could-you-see-what-you-are-typing-in-a-teletype,22:20:29,history - Could you see what you are typing in a Teletype? - Retrocomputing Stack Exchange
+
+id,url,Timestamp,Title  59,http://stackoverflow.com/questions/4566532/solr-worddelimiterfilter-lucene-highlighter,22:20:29,java - Solr WordDelimiterFilter + Lucene Highlighter - Stack Overflow
+
+id,url,Timestamp,Title  60,https://politics.stackexchange.com/questions/18189/why-the-snap-election,22:20:29,united kingdom - Why the snap election? - Politics Stack Exchange
+
+id,url,Timestamp,Title  61,https://magento.stackexchange.com/questions/170777/how-to-create-helper-data,22:20:30,magento 1.9 - How to Create Helper Data? - Magento Stack Exchange
+
+id,url,Timestamp,Title  62,https://askubuntu.com/questions/906674/accidentally-removed-bin-how-to-restore-it,22:20:30,command line - Accidentally removed /bin how to restore it? - Ask Ubuntu
+
+
+id,url,Timestamp         ,Title         63,https://rpg.stackexchange.com/questions/98387/are-there-rules-for-handling-broken-limbs-or-injuries,64,https://data.stackexchange.com,22:20:30        ,dnd 5e - Are there rules for handling broken limbs or injuries? - Role-playing Games Stack Exchange
+
+id,url,Timestamp,Title  65,http://stackoverflow.com/questions/4620210/getting-the-number-of-hits-in-a-documentdoc-in-lucene,22:20:31,java - Getting the number of Hits in a document(doc) in lucene - Stack Overflow
+
+id,url,Timestamp,Title  66,http://stackoverflow.com/questions/5087258/lucene-fast-vector-highlightor-fragments,22:20:32,highlighter - Lucene Fast Vector Highlightor fragments - Stack Overflow
+
+id,url,Timestamp,Title  67,https://serverfault.com,22:20:32,Server Fault
+
+id,url,Timestamp,Title  68,https://android.stackexchange.com,22:20:33,Android Enthusiasts Stack Exchange
+
+id,url,Timestamp,Title  69,http://stackoverflow.com/questions/5623550/kwic-with-lucene-3-1,22:20:33,highlighter - KWIC with lucene 3.1 - Stack Overflow
+
+id,url,Timestamp,Title  70,https://creativecommons.org/licenses/by-sa/3.0,22:20:34,Creative Commons — Attribution-ShareAlike 3.0 Unported — CC BY-SA 3.0
+
+id,url,Timestamp,Title  71,http://stackoverflow.com/questions/8506637/lucene-and-highlighted-text-font-issues,22:20:34,Lucene and Highlighted text font issues - Stack Overflow
+
+id,url,Timestamp,Title  72,https://stackoverflow.blog/2009/06/25/attribution-required,22:20:35,Attribution Required - Stack Overflow Blog
+
+id,url,Timestamp,Title  73,http://stackoverflow.com/questions/17570006/get-the-context-of-match-in-lucene,22:20:35,java - Get the "context" of match in Lucene - Stack Overflow
+
+id,url,Timestamp,Title  74,http://stackoverflow.com/questions/32380011/lucene-5-3-highlighter-getbestfragments-not-working,22:20:36,java - Lucene 5.3 Highlighter getBestFragments() not working - Stack Overflow
+
+id,url,Timestamp,Title  75,http://stackoverflow.com/questions/38109913/how-can-i-improve-performance-of-lucene-highlighter-operations,22:20:37,How can I improve performance of Lucene Highlighter operations? - Stack Overflow
+
+id,url,Timestamp,Title  76,http://stackoverflow.com/company/work-here,22:20:38,We're hiring! - Stack Overflow - Stack Overflow
+
+id,url,Timestamp,Title  77,http://stackoverflow.com/jobs/directory/developer-jobs,22:20:38,Developer Jobs Directory - Stack Overflow
+
+id,url,Timestamp,Title  78,http://stackoverflow.com/contact,22:20:39,Help Center - Contact Us - Stack Overflow

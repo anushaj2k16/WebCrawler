@@ -1,0 +1,157 @@
+
+
+id,url,Timestamp1,http://stackoverflow.com/questions/17535514/lucene-highlighter,2017/04/19 00:42:36
+
+id,url,Timestamp2,http://stackoverflow.com,2017/04/19 00:42:37
+
+id,url,Timestamp3,http://stackoverflow.com/questions,2017/04/19 00:42:38
+
+id,url,Timestamp4,http://stackoverflow.com/jobs,2017/04/19 00:42:38
+
+id,url,Timestamp5,http://stackoverflow.com/documentation,2017/04/19 00:42:39
+
+id,url,Timestamp6,http://stackoverflow.com/tags,2017/04/19 00:42:40
+
+id,url,Timestamp7,http://chat.stackoverflow.com,2017/04/19 00:42:40
+
+id,url,Timestamp8,https://meta.stackoverflow.com,2017/04/19 00:42:41
+
+id,url,Timestamp9,https://stackexchange.com/sites,2017/04/19 00:42:41
+
+id,url,Timestamp10,https://stackoverflow.blog,2017/04/19 00:42:41
+
+id,url,Timestamp11,https://stackexchange.com,2017/04/19 00:42:42
+
+id,url,Timestamp12,https://www.stackoverflowbusiness.com,2017/04/19 00:42:42
+
+id,url,Timestamp13,http://stackexchange.com/legal/privacy-policy,2017/04/19 00:42:43
+
+id,url,Timestamp14,https://www.stackoverflowbusiness.com/advertise,2017/04/19 00:42:43
+
+id,url,Timestamp15,http://stackexchange.com/legal/terms-of-service,2017/04/19 00:42:43
+
+id,url,Timestamp16,https://www.stackoverflowbusiness.com/talent,2017/04/19 00:42:44
+
+id,url,Timestamp17,https://stackexchange.com/newsletters/newsletter,2017/04/19 00:42:44
+
+id,url,Timestamp18,http://stackoverflow.com/help,2017/04/19 00:42:44
+
+id,url,Timestamp19,https://stackexchange.com/questions,2017/04/19 00:42:45
+
+id,url,Timestamp20,https://stackexchange.com/legal,2017/04/19 00:42:45
+
+id,url,Timestamp21,https://stackexchange.com/legal/privacy-policy,2017/04/19 00:42:46
+
+id,url,Timestamp22,http://stackoverflow.com/tour,2017/04/19 00:42:47
+
+id,url,Timestamp23,http://stackexchange.com/sites,2017/04/19 00:42:47
+
+id,url,Timestamp24,http://stackoverflow.com/company/about,2017/04/19 00:42:48
+
+id,url,Timestamp25,http://stackoverflow.com/questions/tagged/java,2017/04/19 00:42:48
+
+id,url,Timestamp26,http://stackoverflow.com/questions/tagged/lucene,2017/04/19 00:42:49
+
+id,url,Timestamp27,http://stackoverflow.com/questions/tagged/highlighter,2017/04/19 00:42:50
+
+id,url,Timestamp28,http://stackoverflow.com/users/2528875/abitnew,2017/04/19 00:42:52
+
+id,url,Timestamp29,http://stackoverflow.com/users/1628375/femtorgon,2017/04/19 00:42:52
+
+id,url,Timestamp30,http://stackoverflow.com/users/2564423/user1234,2017/04/19 00:42:54
+
+id,url,Timestamp31,http://stackoverflow.com/users/614231/stuckless,2017/04/19 00:42:56
+
+id,url,Timestamp32,http://stackoverflow.com/users/4214921/potame,2017/04/19 00:42:57
+
+id,url,Timestamp33,http://stackoverflow.com/users/595305/mike-rodent,2017/04/19 00:42:57
+
+id,url,Timestamp34,http://stackoverflow.com/questions/2997009/problems-using-lucene-highlighter,2017/04/19 00:42:58
+
+id,url,Timestamp35,http://stackoverflow.com/questions/3035805/using-lucene-highlighter-along-with-multifieldqueryparser,2017/04/19 00:42:59
+
+id,url,Timestamp36,http://stackoverflow.com/questions/4566532/solr-worddelimiterfilter-lucene-highlighter,2017/04/19 00:43:00
+
+id,url,Timestamp37,http://stackoverflow.com/questions/4620210/getting-the-number-of-hits-in-a-documentdoc-in-lucene,2017/04/19 00:43:01
+
+id,url,Timestamp38,http://stackoverflow.com/questions/5087258/lucene-fast-vector-highlightor-fragments,2017/04/19 00:43:02
+
+id,url,Timestamp39,http://stackoverflow.com/questions/5623550/kwic-with-lucene-3-1,2017/04/19 00:43:03
+
+id,url,Timestamp40,http://stackoverflow.com/questions/8506637/lucene-and-highlighted-text-font-issues,2017/04/19 00:43:04
+
+id,url,Timestamp41,http://stackoverflow.com/questions/17570006/get-the-context-of-match-in-lucene,2017/04/19 00:43:05
+
+id,url,Timestamp42,http://stackoverflow.com/questions/32380011/lucene-5-3-highlighter-getbestfragments-not-working,2017/04/19 00:43:06
+
+id,url,Timestamp43,http://stackoverflow.com/questions/38109913/how-can-i-improve-performance-of-lucene-highlighter-operations,2017/04/19 00:43:07
+
+id,url,Timestamp44,http://stackoverflow.com/questions/43474596/in-sql-server-database,2017/04/19 00:43:08
+
+id,url,Timestamp45,http://stackoverflow.com/company/work-here,2017/04/19 00:43:09
+
+id,url,Timestamp46,http://stackoverflow.com/jobs/directory/developer-jobs,2017/04/19 00:43:09
+
+id,url,Timestamp47,http://stackoverflow.com/contact,2017/04/19 00:43:10
+
+id,url,Timestamp48,http://lucene.apache.org/core/4_0_0/highlighter/org/apache/lucene/search/highlight/package-summary.html,2017/04/19 00:43:12
+
+id,url,Timestamp49,http://vnarcher.blogspot.de/2012/04/highlighting-text-with-lucene.html,2017/04/19 00:43:14
+
+id,url,Timestamp50,https://politics.stackexchange.com/questions/18163/how-can-erdo%c4%9fan-stay-in-office-until-2029,2017/04/19 00:43:27
+
+id,url,Timestamp51,https://music.stackexchange.com/questions/56404/why-do-we-have-inversions-but-not-permutations,2017/04/19 00:43:27
+
+id,url,Timestamp52,https://serverfault.com/questions/845065/why-do-email-headers-contain-private-ip-addresses,2017/04/19 00:43:27
+
+id,url,Timestamp53,https://unix.stackexchange.com/questions/359598/setuid-bit-not-working-in-ubuntu,2017/04/19 00:43:27
+
+id,url,Timestamp54,https://workplace.stackexchange.com/questions/89396/my-coworker-emailled-me-a-root-password-that-im-not-supposed-to-have-should-i,2017/04/19 00:43:27
+
+id,url,Timestamp55,https://tex.stackexchange.com/questions/365331/def-macro-with-multiple-parameters,2017/04/19 00:43:28
+
+id,url,Timestamp56,https://workplace.stackexchange.com/questions/89357/how-to-handle-coworker-pretending-to-be-my-boss,2017/04/19 00:43:29
+
+id,url,Timestamp57,https://worldbuilding.stackexchange.com/questions/78390/how-can-i-make-medieval-folks-addicted-to-food,2017/04/19 00:43:29
+
+id,url,Timestamp58,https://askubuntu.com/questions/906314/why-would-installing-one-unity-scope-remove-ubuntu-desktop,2017/04/19 00:43:29
+
+id,url,Timestamp59,https://serverfault.com,2017/04/19 00:43:29
+
+id,url,Timestamp60,https://codegolf.stackexchange.com/questions/116809/gcd-lcm-polyglots,2017/04/19 00:43:29
+
+id,url,Timestamp61,https://mechanics.stackexchange.com/questions/43772/why-is-towing-a-manual-transmission-car-in-neutral-with-the-drive-wheels-on-th,2017/04/19 00:43:29
+
+id,url,Timestamp62,https://ell.stackexchange.com/questions/127015/a-verb-to-describe-cooking-potatoes-in-burned-down-fire,2017/04/19 00:43:29
+
+id,url,Timestamp63,https://stats.stackexchange.com/questions/274135/two-die-rolls-same-number-in-sequence,2017/04/19 00:43:29
+
+id,url,Timestamp64,https://tex.stackexchange.com/questions/365261/how-to-neatly-space-the-equals-sign-when-using-probabilities,2017/04/19 00:43:29
+
+id,url,Timestamp65,https://electronics.stackexchange.com/questions/300272/alternatives-to-a-classic-dip-switch,2017/04/19 00:43:29
+
+id,url,Timestamp66,https://security.stackexchange.com/questions/157520/which-hash-length-is-more-secure,2017/04/19 00:43:29
+
+id,url,Timestamp67,https://worldbuilding.stackexchange.com/questions/78513/how-would-an-independent-illegal-and-secret-assassins-guild-accept-assignments,2017/04/19 00:43:29
+
+id,url,Timestamp68,https://mathematica.stackexchange.com/questions/143865/how-to-correctly-write-string-with-tabs-into-file,2017/04/19 00:43:29
+
+id,url,Timestamp69,https://rpg.stackexchange.com/questions/98320/how-would-using-thunderwave-to-stop-falling-damage-work,2017/04/19 00:43:30
+
+id,url,Timestamp70,https://buddhism.stackexchange.com/questions/20160/disenchanted-with-buddhism,2017/04/19 00:43:30
+
+id,url,Timestamp71,https://salesforce.stackexchange.com/questions/170490/get-current-user-language,2017/04/19 00:43:30
+
+id,url,Timestamp72,https://worldbuilding.stackexchange.com/questions/78419/how-can-we-have-dragon-sized-butterflies,2017/04/19 00:43:30
+
+id,url,Timestamp73,https://data.stackexchange.com,2017/04/19 00:43:31
+
+id,url,Timestamp74,https://worldbuilding.stackexchange.com/questions/78445/how-to-have-believable-society-where-people-are-sorted-into-their-roles,2017/04/19 00:43:31
+
+id,url,Timestamp75,https://webmasters.stackexchange.com,2017/04/19 00:43:34
+
+id,url,Timestamp76,https://superuser.com,2017/04/19 00:43:34
+
+id,url,Timestamp77,https://creativecommons.org/licenses/by-sa/3.0,2017/04/19 00:43:35
+
+id,url,Timestamp78,https://stackoverflow.blog/2009/06/25/attribution-required,2017/04/19 00:43:35

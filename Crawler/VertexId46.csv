@@ -1,0 +1,157 @@
+
+
+id,url,Timestamp  1,http://stackoverflow.com/questions/17535514/lucene-highlighter,00:46:56
+
+id,url,Timestamp  2,http://stackoverflow.com,00:47:02
+
+id,url,Timestamp  3,http://stackoverflow.com/questions,00:47:03
+
+id,url,Timestamp  4,http://stackoverflow.com/jobs,00:47:03
+
+id,url,Timestamp  5,http://stackoverflow.com/documentation,00:47:04
+
+id,url,Timestamp  6,http://chat.stackoverflow.com,00:47:05
+
+id,url,Timestamp  7,http://stackoverflow.com/tags,00:47:05
+
+id,url,Timestamp  8,https://meta.stackoverflow.com,00:47:06
+
+id,url,Timestamp  9,http://stackoverflow.com/users,00:47:06
+
+id,url,Timestamp  10,https://stackexchange.com/sites,00:47:06
+
+id,url,Timestamp  11,https://stackoverflow.blog,00:47:06
+
+id,url,Timestamp  12,http://stackoverflow.com/help,00:47:06
+
+id,url,Timestamp  13,https://www.stackoverflowbusiness.com,00:47:07
+
+id,url,Timestamp  14,https://stackexchange.com,00:47:07
+
+id,url,Timestamp  15,https://www.stackoverflowbusiness.com/advertise,00:47:08
+
+id,url,Timestamp  16,http://stackexchange.com/legal/privacy-policy,00:47:08
+
+id,url,Timestamp  17,https://www.stackoverflowbusiness.com/talent,00:47:08
+
+id,url,Timestamp  18,http://stackexchange.com/legal/terms-of-service,00:47:09
+
+id,url,Timestamp  19,http://stackoverflow.com/tour,00:47:09
+
+id,url,Timestamp  20,https://stackexchange.com/questions,00:47:10
+
+id,url,Timestamp  21,http://stackoverflow.com/company/about,00:47:10
+
+id,url,Timestamp  22,http://lucene.apache.org/core/4_0_0/highlighter/org/apache/lucene/search/highlight/package-summary.html,00:47:10
+
+id,url,Timestamp  23,https://stackexchange.com/legal,00:47:10
+
+id,url,Timestamp  24,http://stackoverflow.com/questions/tagged/java,00:47:11
+
+id,url,Timestamp  25,https://stackexchange.com/legal/privacy-policy,00:47:11
+
+id,url,Timestamp  26,http://stackoverflow.com/questions/tagged/lucene,00:47:11
+
+id,url,Timestamp  27,http://vnarcher.blogspot.de/2012/04/highlighting-text-with-lucene.html,00:47:11
+
+id,url,Timestamp  28,http://stackoverflow.com/questions/tagged/highlighter,00:47:12
+
+id,url,Timestamp  29,http://stackexchange.com/sites,00:47:12
+
+id,url,Timestamp  30,http://stackoverflow.com/users/2528875/abitnew,00:47:14
+
+id,url,Timestamp  31,http://stackoverflow.com/users/1628375/femtorgon,00:47:15
+
+id,url,Timestamp  32,http://stackoverflow.com/users/2564423/user1234,00:47:17
+
+id,url,Timestamp  33,http://stackoverflow.com/users/614231/stuckless,00:47:18
+
+id,url,Timestamp  34,http://stackoverflow.com/users/4214921/potame,00:47:19
+
+id,url,Timestamp  35,http://stackoverflow.com/users/595305/mike-rodent,00:47:20
+
+id,url,Timestamp  36,http://stackoverflow.com/questions/2997009/problems-using-lucene-highlighter,00:47:21
+
+id,url,Timestamp  37,http://stackoverflow.com/questions/3035805/using-lucene-highlighter-along-with-multifieldqueryparser,00:47:22
+
+id,url,Timestamp  38,http://stackoverflow.com/questions/4566532/solr-worddelimiterfilter-lucene-highlighter,00:47:23
+
+id,url,Timestamp  39,http://stackoverflow.com/questions/4620210/getting-the-number-of-hits-in-a-documentdoc-in-lucene,00:47:24
+
+id,url,Timestamp  40,http://stackoverflow.com/questions/5087258/lucene-fast-vector-highlightor-fragments,00:47:25
+
+id,url,Timestamp  41,https://academia.stackexchange.com/questions/88189/how-to-react-when-a-team-of-colleagues-obviously-made-up-some-results,00:47:25
+
+id,url,Timestamp  42,https://puzzling.stackexchange.com/questions/51102/what-was-detective-sherlock-missing,00:47:25
+
+id,url,Timestamp  43,https://cooking.stackexchange.com/questions/81024/how-to-clean-a-mill,00:47:25
+
+id,url,Timestamp  44,https://physics.stackexchange.com/questions/327186/why-dont-molecules-of-a-gas-settle,00:47:25
+
+id,url,Timestamp  45,https://worldbuilding.stackexchange.com/questions/78513/how-would-an-independent-illegal-and-secret-assassins-guild-accept-assignments,00:47:25
+
+id,url,Timestamp  46,https://codegolf.stackexchange.com/questions/116808/incremental-cipher,00:47:25
+
+id,url,Timestamp  47,https://rpg.stackexchange.com/questions/98311/player-may-be-manipulating-die-rolls-but-im-uncertain-how-do-i-approach-the-s,00:47:25
+
+id,url,Timestamp  48,https://money.stackexchange.com/questions/78751/is-a-credit-from-a-utility-company-taxable,00:47:25
+
+id,url,Timestamp  49,https://islam.stackexchange.com/questions/39129/is-a-marriage-which-is-illegal-in-the-host-country-still-islamically-valid,00:47:26
+
+id,url,Timestamp  50,https://politics.stackexchange.com/questions/18163/how-can-erdo%c4%9fan-stay-in-office-until-2029,00:47:26
+
+id,url,Timestamp  51,http://stackoverflow.com/questions/5623550/kwic-with-lucene-3-1,00:47:26
+
+id,url,Timestamp  52,https://mathematica.stackexchange.com/questions/143865/how-to-correctly-write-string-with-tabs-into-file,00:47:26
+
+id,url,Timestamp  53,https://mechanics.stackexchange.com/questions/43772/why-is-towing-a-manual-transmission-car-in-neutral-with-the-drive-wheels-on-th,00:47:26
+
+id,url,Timestamp  54,https://worldbuilding.stackexchange.com/questions/78445/how-to-have-believable-society-where-people-are-sorted-into-their-roles,00:47:26
+
+id,url,Timestamp  55,https://serverfault.com/questions/845065/why-do-email-headers-contain-private-ip-addresses,00:47:26
+
+id,url,Timestamp  56,https://scifi.stackexchange.com/questions/157509/was-the-first-nite-owl-pro-or-anti-dr-manhattan,00:47:26
+
+id,url,Timestamp  57,https://salesforce.stackexchange.com/questions/170483/can-we-prevent-or-detect-console-popup-event,00:47:26
+
+id,url,Timestamp  58,https://history.stackexchange.com/questions/37542/were-there-ever-wars-battles-where-infantry-were-given-multiple-rifles-to-speed,00:47:26
+
+id,url,Timestamp  59,https://boardgames.stackexchange.com/questions/34952/do-the-rules-of-multiple-copies-of-a-card-stack,00:47:26
+
+id,url,Timestamp  60,https://tex.stackexchange.com/questions/365261/how-to-neatly-space-the-equals-sign-when-using-probabilities,00:47:26
+
+id,url,Timestamp  61,https://gis.stackexchange.com/questions/237156/is-there-a-way-to-show-images-related-to-features-in-qgis,00:47:26
+
+id,url,Timestamp  62,https://superuser.com/questions/1200878/determine-if-bios-supports-uefi-and-gpt,00:47:27
+
+id,url,Timestamp  63,https://stats.stackexchange.com/questions/274336/gradient-descent-doesnt-find-solution-to-ordinary-least-squares-on-this-dataset,00:47:27
+
+id,url,Timestamp  64,https://politics.stackexchange.com/questions/18164/is-nato-obliged-to-invoke-article-5-if-one-of-its-members-attacks-another-member,00:47:27
+
+id,url,Timestamp  65,http://stackoverflow.com/questions/8506637/lucene-and-highlighted-text-font-issues,00:47:27
+
+id,url,Timestamp  66,https://data.stackexchange.com,00:47:27
+
+id,url,Timestamp  67,https://worldbuilding.stackexchange.com/questions/78390/how-can-i-make-medieval-folks-addicted-to-food,00:47:27
+
+id,url,Timestamp  68,https://superuser.com,00:47:27
+
+id,url,Timestamp  69,http://stackoverflow.com/questions/17570006/get-the-context-of-match-in-lucene,00:47:28
+
+id,url,Timestamp  70,http://stackoverflow.com/questions/32380011/lucene-5-3-highlighter-getbestfragments-not-working,00:47:29
+
+id,url,Timestamp  71,http://stackoverflow.com/questions/38109913/how-can-i-improve-performance-of-lucene-highlighter-operations,00:47:30
+
+id,url,Timestamp  72,https://webmasters.stackexchange.com,00:47:30
+
+id,url,Timestamp  73,https://wordpress.stackexchange.com,00:47:30
+
+id,url,Timestamp  74,http://stackoverflow.com/company/work-here,00:47:31
+
+id,url,Timestamp  75,https://creativecommons.org/licenses/by-sa/3.0,00:47:31
+
+id,url,Timestamp  76,http://stackoverflow.com/jobs/directory/developer-jobs,00:47:31
+
+id,url,Timestamp  77,https://stackoverflow.blog/2009/06/25/attribution-required,00:47:32
+
+id,url,Timestamp  78,http://stackoverflow.com/contact,00:47:32
