@@ -13,10 +13,12 @@ import java.net.URL;
 public class ItemUrl {
 	
 	URL url; 
+	int srcId;
 	int depth;
 	
-	public ItemUrl(URL url, int depth){
+	public ItemUrl(URL url, int srcId, int depth){
 		this.url=url;
+		this.srcId= srcId;
 		this.depth=depth;
 	}
 	
@@ -26,6 +28,14 @@ public class ItemUrl {
 	
 	public void setUrl(URL url) {
 		this.url = url;
+	}
+	
+	public int getSrcId() {
+		return srcId;
+	}
+	
+	public void setSrcId(int srcId) {
+		this.srcId= srcId;
 	}
 	
 	public int getDepth(){
