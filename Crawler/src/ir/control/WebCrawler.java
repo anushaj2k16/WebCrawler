@@ -165,7 +165,8 @@ public class WebCrawler {
 	 * */
 	private static boolean VERBOSE=true; 
 	
-	private static int VertexId = 0;
+	private static int vertexId = 0;
+	private static Object vertexId_lock = new int[1];
 	
 	/**For debugging and studied runs. It requests the class to print additional status messages. As shipped its value is false.*/
 	private static boolean DEBUG_MODE=false; 
@@ -197,9 +198,11 @@ public class WebCrawler {
 	/**Referrer name, for Jsoup. This prevents some exceptions. By default: http://www.google.com*/
 	private static String REFERRER="http://www.google.com";
 	
+	private String vertexFileName;
+	private String edgeFileName;
+	
 	private FileWriter pw;
 
-	
 	private  StringBuilder sb;
 	 
 	/**Additional class members*/
@@ -269,7 +272,7 @@ public class WebCrawler {
 	      }
 	      return instance;
 	}
-		
+	
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH-mm");
 	LocalDateTime now = LocalDateTime.now();
 	
@@ -544,7 +547,7 @@ public class WebCrawler {
 		    		URL url2=new URL (tempURL);
 					if (isValid(url2)){
 						if (!isExcluded(url2)){ //Step (5), again after normalization.
-							nextUrls.add(new ItemUrl(url2,0));
+							nextUrls.add(new ItemUrl(url2, -1, 0));
 						}
 					}
 					
@@ -559,10 +562,10 @@ public class WebCrawler {
 				*   This case is distinguished from others, because here the index can be created
 				* */
 		    	//Note we can visit because steps 1-5 have already been carried out.
-		    	
 		    	if (nextUrls.get(0).getDepth()+1<=maxCrawlDepth){//According to depth we can crawl or simply index
 		    		List<URL> newPages= new ArrayList<URL>();
-					try {//Now we index the page from the first URL and obtain a list of it's outlinks
+		    		int vid= 0;
+		    		try {//Now we index the page from the first URL and obtain a list of it's outlinks
 						
 						//We start by getting the excluded list of the host
 						if(!isVisitedHost(nextUrls.get(0).getUrl())){
@@ -575,13 +578,17 @@ public class WebCrawler {
 								excludedUrls.addAll(auxURLs);
 							}
 						}
-						newPages = threads.get(0).crawlAndIndexPage(nextUrls.get(0).getUrl(), resetIndex); //Note the use of createIndex instead of false
+						//Here we have the url of the source page.
+						synchronized (vertexId_lock){
+							vid=++vertexId;
+				    	}
+						newPages = threads.get(0).crawlAndIndexPage(nextUrls.get(0).getUrl(), vid, nextUrls.get(0).getSrcId(), resetIndex); //Note the use of createIndex instead of false
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}	
 					for (URL page: newPages){
-						tentativeUrls.add(new ItemUrl(page, 1)); //We add the outlink list to tentativeUrls, with depth 1
+						tentativeUrls.add(new ItemUrl(page, vid, 1)); //We add the outlink list to tentativeUrls, with depth 1
 					}
 					/**Now we carry out steps (1) and (2) and (5) for the list of tentativeURLs
 					 * */
@@ -591,8 +598,9 @@ public class WebCrawler {
 		    	}
 		    	else if (nextUrls.get(0).getDepth()==maxCrawlDepth){ //We will simply index the page
 		    		org.jsoup.nodes.Document doc=null;
-					try {
+		    		try {
 						String startUrl=nextUrls.get(0).getUrl().toString();
+						int srcId= nextUrls.get(0).getSrcId();
 						
 						//Before indexing we will get the excluded list of the host
 						if(!isVisitedHost(nextUrls.get(0).getUrl())){
@@ -632,7 +640,11 @@ public class WebCrawler {
 								}
 							}
 						}
-						threads.get(0).indexPage(doc, new URL (threads.get(0).normalize(doc.location())), resetIndex);//Note the use of createIndex instead of false
+						int vid=0;
+						synchronized (vertexId_lock){
+							vid=++vertexId;
+				    	}
+						threads.get(0).indexPage(doc, new URL (threads.get(0).normalize(doc.location())), vid, srcId, resetIndex);//Note the use of createIndex instead of false
 
 					} catch (Exception e1) {
 					// TODO Auto-generated catch block
@@ -1278,10 +1290,14 @@ public class WebCrawler {
     			}
     			else{
     				discardPositions.addAll(testPositions);
-    				ItemUrl selectedItem = new ItemUrl (list.get(testPositions.get(0)).getUrl(), list.get(testPositions.get(0)).getDepth());
+    				ItemUrl selectedItem = new ItemUrl (list.get(testPositions.get(0)).getUrl(), list.get(testPositions.get(0)).getSrcId(), list.get(testPositions.get(0)).getDepth());
     				for (int k=1; k<testPositions.size(); k++){
     					if(list.get(testPositions.get(k)).getDepth()<selectedItem.getDepth()){
     						selectedItem.setDepth(list.get(testPositions.get(k)).getDepth());
+    					}
+    					if(list.get(testPositions.get(k)).getSrcId()!=selectedItem.getSrcId()){
+    						selectedItem.setSrcId(list.get(testPositions.get(k)).getSrcId());
+    						System.out.println("Yes, the assignation was wrong.");
     					}
     				}
     				result.add(selectedItem);
@@ -1585,7 +1601,7 @@ public class WebCrawler {
 								isBusy=false;
 							}
 						}
-						ItemUrl url=new ItemUrl(toVisit, nextUrls2.get(nextUrl).getDepth());
+						ItemUrl url=new ItemUrl(toVisit, nextUrls2.get(nextUrl).getSrcId(), nextUrls2.get(nextUrl).getDepth());
 						if (isVisited(toVisit)){//Step (2) Perhaps redundant, but its valid and perhaps wise, to check on an updated visitedURLs list...
 							if (VERBOSE){
 								System.out.println("Thread: "+id+" attempted to re-visit: "+toVisit.toString()+" but it was detected.");
@@ -1606,6 +1622,7 @@ public class WebCrawler {
 							
 							if (url.getDepth()+1<=maxCrawlDepth){ //We crawl and index
 								List<URL> results=new ArrayList<URL>();
+								int vid= 0;
 								try {
 									//Before indexing we will get the excluded list of the host
 									if(!isVisitedHost(url.getUrl())){
@@ -1622,7 +1639,10 @@ public class WebCrawler {
 									}
 									if (!isExcluded(url.getUrl())){
 										try{
-											results=crawlAndIndexPage(url.getUrl(), false);
+											synchronized (vertexId_lock){
+												vid= ++vertexId;
+									    	}
+											results=crawlAndIndexPage(url.getUrl(), vid, url.getSrcId(), false);
 										} catch (Exception e){
 										    synchronized (nextUrls_lock){
 												nextUrls.remove(nextUrls2.get(nextUrl)); 
@@ -1655,7 +1675,7 @@ public class WebCrawler {
 								}
 								synchronized (tentativeUrls_lock){
 									for (URL result: results){
-										tentativeUrls.add(new ItemUrl(result, url.getDepth()+1));//We add the results to the tentativeUrls list.
+										tentativeUrls.add(new ItemUrl(result, vid, url.getDepth()+1));//We add the results to the tentativeUrls list.
 									}
 								}
 								if (!wasExcluded)
@@ -1695,7 +1715,11 @@ public class WebCrawler {
 											if (VERBOSE)
 												System.out.println("Note:- Only indexing for url:"+ normalize(doc.location())+" "+id);
 											try{
-												indexPage(doc, new URL (normalize(doc.location())), false);}
+												int vid=0;
+												synchronized (vertexId_lock){
+													vid=++vertexId;
+										    	}
+												indexPage(doc, new URL (normalize(doc.location())), vid, url.getSrcId(), false);}
 											catch (Exception e){
 												synchronized (nextUrls_lock){
 													nextUrls.remove(nextUrls2.get(nextUrl)); 
@@ -1854,7 +1878,7 @@ public class WebCrawler {
 		 *  
 		 */
 		@SuppressWarnings("deprecation")
-		private void indexPage (org.jsoup.nodes.Document doc, URL pageLink, boolean createIndex){			
+		private void indexPage (org.jsoup.nodes.Document doc, URL pageLink, int vertexId, int srcId, boolean createIndex){			
 			
 				/*if(!isVisited(pageLink) && doc.toString().length()>MINIMUM_DOC_LENGTH_FOR_INDEXING){
 				*//**
@@ -2044,9 +2068,10 @@ public class WebCrawler {
 			if(!isVisited(pageLink) && doc.toString().length()>MINIMUM_DOC_LENGTH_FOR_INDEXING){
 
 				try {
-					String fileName="VertexId"+dtf.format(now)+".csv";
-					System.out.println(fileName);
-					pw = new FileWriter(new File(fileName),true);
+					if (vertexFileName==null){
+						vertexFileName="VertexId"+dtf.format(now)+".csv";
+					}
+					pw = new FileWriter(new File(vertexFileName),true);
 					sb = new StringBuilder();
 				    sb.append("id");
 				    sb.append(',');
@@ -2058,7 +2083,7 @@ public class WebCrawler {
 				    sb.append("  ");
 				    pw.write(System.getProperty( "line.separator" ));
 				    
-					sb.append(++VertexId);
+					sb.append(vertexId);
 					sb.append(',');
 					sb.append(pageLink.toString()); 
 					sb.append(',');
@@ -2074,6 +2099,23 @@ public class WebCrawler {
 				    pw.write(sb.toString()); 
 			        pw.close();
 					
+			        //Create edges.
+			        if (srcId!=-1){ //If it's not a seed, we create an edge :)
+			        	if (edgeFileName==null){
+							edgeFileName="EdgeId"+dtf.format(now)+".csv";
+						}
+			        	pw = new FileWriter(new File(edgeFileName),true);
+						sb = new StringBuilder();
+				    	sb.append(srcId);
+						sb.append(',');
+						sb.append(vertexId); 
+						pw.write(System.getProperty( "line.separator" ));
+			
+
+				    	pw.write(sb.toString()); 
+			        	pw.close();
+			        }
+			        
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -2097,14 +2139,14 @@ public class WebCrawler {
 		 * 
 		 * @throws Exception
 		 */
-		private List<URL> crawlAndIndexPage(URL pageLink, boolean createIndex) throws Exception {
+		private List<URL> crawlAndIndexPage(URL pageLink, int vertexId, int srcId, boolean createIndex) throws Exception {
 			Set<URL> urlsFound = new LinkedHashSet<URL>(); //List for URLs found in current page
 		    org.jsoup.nodes.Document doc=null;
 	    	String startUrl=pageLink.toString();
 		    //First we retrieve the url passed as input
 		    try {
 				doc = Jsoup.connect(startUrl).userAgent(USER_AGENT).referrer(REFERRER).get();
-				indexPage(doc, new URL (normalize(doc.location())), createIndex);//Here we index the page
+				indexPage(doc, new URL (normalize(doc.location())), vertexId, srcId, createIndex);//Here we index the page
 			
 				/**The following while loop tries to catch redirects and mark as visited all the intermediate URLs
 				 * It checks if the location of the retrieved document is the same as the one from the 

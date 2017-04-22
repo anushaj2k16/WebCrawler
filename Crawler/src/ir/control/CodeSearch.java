@@ -91,17 +91,17 @@ System.out.println("Starting thread");
 			 * 
 			 * */
 		
-			SearchHandler mysearcher = new SearchHandler(dir);
-			try {
-				List<WebPage> hits= new ArrayList<WebPage>();
-				hits.addAll(mysearcher.searchIndex(searchString));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (ParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+//			SearchHandler mysearcher = new SearchHandler(dir);
+//			try {
+//				List<WebPage> hits= new ArrayList<WebPage>();
+//				hits.addAll(mysearcher.searchIndex(searchString));
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			} catch (ParseException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 		}
 	}
 }
