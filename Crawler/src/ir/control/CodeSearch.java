@@ -35,7 +35,6 @@ public class CodeSearch {
 	public static void main(String[] args) {
 		
 		boolean useGUI=false;
-System.out.println("Starting thread");
 		if (useGUI){
 			java.awt.EventQueue.invokeLater(new Runnable() {
 	            public void run() {
@@ -48,11 +47,9 @@ System.out.println("Starting thread");
 			/**Configurable variables */
 			String dir = "default_index";
 			boolean createIndex=true; //Signals if the index should be created or read from the directory.
-			int depth= 1;
-			String searchString="highlighter";
-			String urlSeed="http://stackoverflow.com/questions/17535514/lucene-highlighter"; //"https://github.com/joyent/node/tree/master/benchmark/arrays";//
-			
-			//String urlSeed="http://stackoverflow.com/questions/30073980/java-writing-strings-to-a-csv-file";
+			int depth= 2;
+			//String urlSeed="http://stackoverflow.com/questions/17535514/lucene-highlighter";
+			String urlSeed="https://scholar.google.de/scholar?hl=en&q=rdbms&as_sdt=1%2C5&as_sdtp=&oq=rd";
 			List<URL> seeds= new ArrayList<URL>(); //Seeds to be passed as input
 		
 			/**
@@ -82,26 +79,6 @@ System.out.println("Starting thread");
 				// 	TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		
-			/**
-			 * 	Now we perform a query over the index and crawled pages. 
-			 * The searchIndex function takes as input the query as a string.
-			 * 
-			 * The function outputs a ScoreDoc array with the results, of size 10 (by default)
-			 * 
-			 * */
-		
-//			SearchHandler mysearcher = new SearchHandler(dir);
-//			try {
-//				List<WebPage> hits= new ArrayList<WebPage>();
-//				hits.addAll(mysearcher.searchIndex(searchString));
-//			} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			} catch (ParseException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
 		}
 	}
 }

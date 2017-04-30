@@ -24,33 +24,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
-
-import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.index.IndexWriterConfig.OpenMode;
-import org.apache.lucene.index.Term;
-import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.util.Version;
-import org.apache.lucene.document.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.jsoup.Connection.Response;
 import org.jsoup.Jsoup;
 import java.lang.Object;
-import java.io.Writer;
-import java.io.PrintWriter;
-
-
-
-
-import net.sf.classifier4J.summariser.*;
-import sun.util.calendar.LocalGregorianCalendar.Date; 
 
 /**
  * 
@@ -1879,192 +1859,6 @@ public class WebCrawler {
 		 */
 		@SuppressWarnings("deprecation")
 		private void indexPage (org.jsoup.nodes.Document doc, URL pageLink, int vertexId, int srcId, boolean createIndex){			
-			
-				/*if(!isVisited(pageLink) && doc.toString().length()>MINIMUM_DOC_LENGTH_FOR_INDEXING){
-				*//**
-			 	* We declare the lucene variables for indexing.
-			 	*//*
-			
-				Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_4_10_0);
-				
-			
-				String codeString="";
-				String codeSeparator=" ... ";
-				*//**
-			 	* Here, we extract just the part of the html code which contain programming code.
-			 	*//*	
-				Elements codesAsElement = doc.select("code");
-	    		for (Element code : codesAsElement) {
-	    			codeString+=code.toString().replace("<code>", "").replace("</code>","")+codeSeparator;
-	    		}
-	    		Elements codesAsClass = doc.getAllElements();
-	    		for (Element code : codesAsClass) {
-	    			if (code.hasClass("code")){
-	    				for (Element code2: code.getElementsByClass("code")){
-	    						codeString+=code2.ownText().toString()+codeSeparator;
-	    				}
-	    			}
-	    		}
-	    		
-				
-			
-				*//**
-			 	* A Lucene Document variable is declared.
-				*//*	
-				Document luceneDoc= new Document();
-			
-				*//**
-			 	* Here, we start adding fields to the indexer. We also create the variable summariser, which gives us
-				* a small summary (in this case two sentences) of the web page.
-				*//*	
-				TextField field1=new TextField("title", doc.title(), Field.Store.YES);
-				field1.setBoost((float)1.5);
-				luceneDoc.add(field1);
-				Field field2=new Field ("url", pageLink.toString(), Field.Store.YES, Field.Index.NOT_ANALYZED, Field.TermVector.NO);
-				field2.setBoost((float)1.0);
-				luceneDoc.add(field2);
-				TextField field3= new TextField("code", codeString, Field.Store.YES);
-				if(codeString.length()>2){
-					field3.setBoost((float)2.0); //We boost the field.			
-				}
-				luceneDoc.add(field3);
-				String contentString=doc.toString();
-				TextField field4=new TextField("content", contentString, Field.Store.YES);
-				field4.setBoost((float)1.0);
-				luceneDoc.add(field4);
-				
-				String pl= "";
-				contentString=contentString.toLowerCase();
-				if (codeString.toLowerCase().contains("javascript")){//Since this is a common language used in html forms, we dont search for it in the content.
-					pl="javascript";
-				}else if (codeString.toLowerCase().contains("java")||contentString.contains("java")){
-					pl="java";
-				}
-				else if (codeString.toLowerCase().contains("c++")||contentString.contains("c++")){
-					pl="c++";
-				}
-				else if (codeString.toLowerCase().contains("c#")||contentString.contains("c#")){
-					pl="c#";
-				}
-				else if (codeString.toLowerCase().contains("ruby")||contentString.contains("ruby")){
-					pl="ruby";
-				}
-				else if (codeString.toLowerCase().contains(" scala ")||contentString.contains(" scala ")){
-					pl="scala";
-				}
-				else if (codeString.toLowerCase().contains("python")||contentString.contains("python")){
-					pl="python";
-				}
-				else if (codeString.toLowerCase().contains("sql")||contentString.contains("sql")){
-					pl="sql";
-				}
-				else if (codeString.toLowerCase().contains("assembly")||contentString.contains("assembly")){
-					pl="assembly";
-				}
-				else if (codeString.toLowerCase().contains("pascal")||contentString.contains("pascal")){
-					pl="pascal";
-				}
-				else if (codeString.toLowerCase().contains("fortran")||contentString.contains("fortran")){
-					pl="fortran";
-				}
-				else if (codeString.toLowerCase().contains("php")){//Since this is a common language used in html forms, we dont search for it in the content.
-					pl="php";
-				}
-				else if (codeString.toLowerCase().contains("cuda")||contentString.contains("cuda")){
-					pl="cuda";
-				}
-				else if (codeString.toLowerCase().contains("latex")||contentString.contains("latex")){
-					pl="latex";
-				}
-				else if (codeString.toLowerCase().contains("matlab")||contentString.contains("matlab")){
-					pl="matlab";
-				}
-				else if (codeString.toLowerCase().contains("opencl")||contentString.contains("opencl")){
-					pl="opencl";
-				}
-				else if (codeString.toLowerCase().contains("octave")||contentString.contains("octave")){
-					pl="octave";
-				}
-				TextField field5=new TextField("programming_language", pl, Field.Store.YES);
-				if (pl.length()>2){
-					field5.setBoost((float)1.5);
-				}
-				luceneDoc.add(field5);
-				
-			
-				ISummariser summariser= new SimpleSummariser();
-				String textForSummary="";
-				Elements bodyAux  = doc.body().getAllElements();
-		        for (int k=0; k<bodyAux.size(); k++){
-    				textForSummary+=bodyAux.get(k).ownText();
-		        }
-		        if(textForSummary.length()<2){
-		        	textForSummary=doc.body().text();
-		        }
-				String summary=summariser.summarise(textForSummary, 2);
-				Field field6 = new Field("summary", summary, Field.Store.YES, Field.Index.NOT_ANALYZED, Field.TermVector.NO);
-				field6.setBoost(0);//The summary is only a back-up and not to be used for searching.
-				luceneDoc.add(field6);
-			
-				String indexFolder="";
-				if (usingNonDefaultIndex){
-					indexFolder=currentIndexFolder;
-				}
-				else{
-					indexFolder=DEFAULT_INDEX_FOLDER;
-				}
-
-				
-				synchronized (index_lock){ //We need the index lock to access the directory and index
-									
-					try {
-						Directory indexDir=FSDirectory.open(new File(indexFolder));
-						boolean timeOutException= true;
-						int numAttempts=0;
-						while (timeOutException){
-							try {
-								IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_4_10_0, analyzer);
-								if (createIndex){
-									iwc.setOpenMode(OpenMode.CREATE);	
-								}
-								else{ //Note: Here we assume that the Index exists. This has to be checked upon user input.					
-									iwc.setOpenMode(OpenMode.CREATE_OR_APPEND);
-								}
-								IndexWriter writer = new IndexWriter(indexDir, iwc);
-								if (createIndex){
-									writer.addDocument(luceneDoc);
-									writer.commit();
-								}	
-								else{
-								//Here we can make a final check before adding the document: 
-									writer.updateDocument(new Term("url", pageLink.toString()), luceneDoc);
-									writer.commit();
-								}
-								writer.close();
-								indexDir.close();
-								timeOutException=false;
-							} catch (org.apache.lucene.store.LockObtainFailedException e) {
-								// TODO Auto-generated catch block
-								//e.printStackTrace();
-								numAttempts++;
-								if (numAttempts>=2){
-									System.out.println("Could not index page, due to problems with Lucene's implicit lock. Received "+numAttempts+" timeout messages from Lucene.");
-									timeOutException=false;
-								}
-							} catch (IOException e2){
-								e2.printStackTrace();
-								timeOutException=false;
-							}
-							
-						}
-
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				}
-			}*/
-			
 			if(!isVisited(pageLink) && doc.toString().length()>MINIMUM_DOC_LENGTH_FOR_INDEXING){
 
 				try {
@@ -2091,11 +1885,24 @@ public class WebCrawler {
 					LocalDateTime now = LocalDateTime.now();
 					sb.append(dtf_ts.format(now)); 
 					sb.append(",");
-					String title= doc.title();
+					String title= "";
+					
+					if(vertexId==1){
+						title=doc.title();
+					}
+					else{
+						Elements body =doc.select("div#gs_ccl_top");
+						for(Element header:body){
+							for(Element e: header.select("div#gs_rt_hdr")){
+								title=e.select("h2 a").text();
+								System.out.println(title);
+								}
+								
+							}	
+					}
+								
 					sb.append(title);
 					pw.write(System.getProperty( "line.separator" ));
-			
-
 				    pw.write(sb.toString()); 
 			        pw.close();
 					
@@ -2106,6 +1913,11 @@ public class WebCrawler {
 						}
 			        	pw = new FileWriter(new File(edgeFileName),true);
 						sb = new StringBuilder();
+				    	sb.append("From");
+						sb.append(',');
+						sb.append("To"); 
+						pw.write(System.getProperty( "line.separator" ));
+						
 				    	sb.append(srcId);
 						sb.append(',');
 						sb.append(vertexId); 
@@ -2146,6 +1958,26 @@ public class WebCrawler {
 		    //First we retrieve the url passed as input
 		    try {
 				doc = Jsoup.connect(startUrl).userAgent(USER_AGENT).referrer(REFERRER).get();
+		    	//doc=Jsoup.connect(startUrl).get();
+		    	//Elements links=doc.select("a[href]");
+		    	Elements body =doc.select("div#gs_ccl_results");
+				System.out.println("Printing title");
+				for(Element header:body){
+					for(Element e: header.select("div.gs_ri")){
+						String title=e.select("h3.gs_rt").text();
+						System.out.println(title);
+						String authors=e.select("div.gs_a").text();
+						System.out.println(authors);
+						for(Element citedBy:e.select("div.gs_fl")){
+							if(citedBy.select("a").text().contains("Cited by")){		
+								String citedURL=citedBy.select("a").attr("href");
+								System.out.println(citedURL);
+							}
+						}
+						
+					}			
+				}
+							
 				indexPage(doc, new URL (normalize(doc.location())), vertexId, srcId, createIndex);//Here we index the page
 			
 				/**The following while loop tries to catch redirects and mark as visited all the intermediate URLs
@@ -2187,25 +2019,35 @@ public class WebCrawler {
 				e1.printStackTrace();
 			}
 			
+		    //Explore cited links
+		    Elements body =doc.select("div#gs_ccl_results");
+			System.out.println("Printing title");
+			for(Element header:body){
+				for(Element e: header.select("div.gs_ri")){
+					String title=e.select("h3.gs_rt").text();
+					System.out.println(title);
+					String authors=e.select("div.gs_a").text();
+					System.out.println(authors);
+					for(Element citedBy:e.select("div.gs_fl")){
+						if(citedBy.select("a").text().contains("Cited by")){		
+							String citedURL=citedBy.select("a").attr("href");
+							citedURL=normalize(citedURL, startUrl);
+							urlsFound.add(new URL(citedURL));
+						}
+					}
+					
+				}			
+			}
+			List<URL> results= new ArrayList<URL>();
+		    results.addAll(urlsFound);
+		    return results; 
+		    
 		    //Explore outlinks	    
 		    /**
 			 * In this section, we just check and validate the URL's. 
 			 */	
 		    
-		    Elements links = doc.select("a");
-		    for (Element link : links) {
-		    	String linkHref = link.attr("href");
-		    	try {
-	    			linkHref=normalize(linkHref, startUrl);
-	    			urlsFound.add(new URL(linkHref));
-	    		} catch (MalformedURLException e) {
-	    			// TODO Auto-generated catch block
-	    			e.printStackTrace();	        	 
-	    		}
-		    }
-		    List<URL> results= new ArrayList<URL>();
-		    results.addAll(urlsFound);
-		    return results; 
+
 		}
 		
 		/**
@@ -2300,9 +2142,9 @@ public class WebCrawler {
 		 */
 		private String normalize(String taintedURL, String baseURL) throws MalformedURLException  {
 		    URL url = null;
-		    if (taintedURL.contains("?")&& !taintedURL.startsWith("?")){
-		    	taintedURL = taintedURL.split("\\?")[0];
-		    }
+//		    if (taintedURL.contains("?")&& !taintedURL.startsWith("?")){
+//		    	taintedURL = taintedURL.split("\\?")[0];
+//		    }
 			if(taintedURL.startsWith("?")){
 				taintedURL="";
 			}
@@ -2333,30 +2175,32 @@ public class WebCrawler {
 	            throw new MalformedURLException(e.getMessage());
 	        }
 	        
-	        String path = url.getPath().replace("/$", "");
-	             
-	        String returnString = url.getProtocol() + "://" + url.getHost() + path ; 
+//	        String path = url.getPath().replace("/$", "");
+//	             
+//	        String returnString = url.getProtocol() + "://" + url.getHost() + path ; 
+//	        
+//	        if (returnString.endsWith("/"))
+//	        	returnString=returnString.substring(0, returnString.length()-1);
+//	        if (returnString.contains("https://scholar.google.de/scholar")){
+//	        	String trailingString= returnString.split("https://scholar.google.de/scholar")[1];
+//	        	String chunks []= trailingString.split("/");
+//	        	if (chunks.length>=2){
+//	        		boolean isNumberPL=true;
+//					try {  
+//						@SuppressWarnings("unused")
+//						double d = Double.parseDouble(chunks[0]);  
+//					}  
+//					catch(NumberFormatException nfe){  
+//						isNumberPL=false;  
+//					}
+//					if(isNumberPL){
+//						returnString="https://scholar.google.de/scholar";
+//	        			returnString+=chunks[0]+"/"+chunks[1];
+//					}
+//				}
+//	        }
 	        
-	        if (returnString.endsWith("/"))
-	        	returnString=returnString.substring(0, returnString.length()-1);
-	        if (returnString.contains("http://stackoverflow.com/questions/")){
-	        	String trailingString= returnString.split("http://stackoverflow.com/questions/")[1];
-	        	String chunks []= trailingString.split("/");
-	        	if (chunks.length>=2){
-	        		boolean isNumberPL=true;
-					try {  
-						@SuppressWarnings("unused")
-						double d = Double.parseDouble(chunks[0]);  
-					}  
-					catch(NumberFormatException nfe){  
-						isNumberPL=false;  
-					}
-					if(isNumberPL){
-						returnString="http://stackoverflow.com/questions/";
-	        			returnString+=chunks[0]+"/"+chunks[1];
-					}
-				}
-	        }
+	        String returnString = url.toString();
 	        return returnString;	
 	    }
 		
@@ -2380,9 +2224,9 @@ public class WebCrawler {
 		 *  */
 		private String normalize(String input) {
 		    String taintedURL=input;
-		    if (taintedURL.contains("?")&& !taintedURL.startsWith("?")){
-		    	taintedURL = taintedURL.split("\\?")[0];
-		    }
+//		    if (taintedURL.contains("?")&& !taintedURL.startsWith("?")){
+//		    	taintedURL = taintedURL.split("\\?")[0];
+//		    }
 		    if (taintedURL.contains(" ")){
 		    	String parseArray[] = taintedURL.split(" ");
 		    	for (int i=0; i<parseArray.length; i++){
@@ -2411,8 +2255,10 @@ public class WebCrawler {
 	        String returnString = taintedURL; 
 	        if (returnString.endsWith("/"))
 	        	returnString=returnString.substring(0, returnString.length()-1);
-	        if (returnString.contains("http://stackoverflow.com/questions/")){
-	        	String trailingString= returnString.split("http://stackoverflow.com/questions/")[1];
+//	        if (returnString.contains("http://stackoverflow.com/questions/")){
+//	        	String trailingString= returnString.split("http://stackoverflow.com/questions/")[1];
+	        if (returnString.contains("https://scholar.google.de/scholar")){
+	        	String trailingString= returnString.split("https://scholar.google.de/scholar")[1];
 	        	String chunks []= trailingString.split("/");
 	        	if (chunks.length>=2){
 	        		boolean isNumberPL=true;
