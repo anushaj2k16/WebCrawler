@@ -10,7 +10,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.net.InetSocketAddress;
 import java.net.MalformedURLException;
+import java.net.Proxy;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -708,6 +711,7 @@ public class WebCrawler {
 						synchronized (vertexId_lock) {
 							vid = ++vertexId;
 						}
+						//from seed url gets to visit next citedby links
 						newPages = threads.get(0).crawlAndIndexPage(nextUrls.get(0).getUrl(), vid,
 								nextUrls.get(0).getSrcId(), resetIndex); // Note
 																			// the
@@ -764,7 +768,7 @@ public class WebCrawler {
 						}
 
 						doc = Jsoup.connect(startUrl).userAgent(USER_AGENT).referrer(REFERRER).get();
-
+						System.out.println(doc.toString());
 						/**
 						 * The following while loop tries to catch redirects and
 						 * mark as visited all the intermediate URLs It checks
@@ -2466,10 +2470,21 @@ public class WebCrawler {
 			int sourceId = -1;
 			// First we retrieve the url passed as input
 			try {
-				doc = Jsoup.connect(startUrl).userAgent(USER_AGENT).referrer(REFERRER).get();
-			
 				
-			/*	Elements body = doc.select("div#gs_ccl_results");
+			/*	URL url = new URL("https://scholar.google.de/scholar?q=rdbms&hl=en&as_sdt=0,5");
+				Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 8080));
+				
+				HttpURLConnection uc = (HttpURLConnection)url.openConnection(proxy);
+				uc.connect();
+				String line = new String();
+				StringBuffer tmp = new StringBuffer();
+				BufferedReader in = new BufferedReader(new InputStreamReader(uc.getInputStream()));
+				while((line = in.readLine()) != null)
+					System.out.println();*/
+				doc = Jsoup.connect(startUrl).userAgent("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1467.0 Safari/537.36").referrer(REFERRER).get();
+				System.out.println(doc.toString());
+				
+			Elements body = doc.select("div#gs_ccl_results");
 				System.out.println("Printing title");
 				for (Element header : body) {
 					for (Element e : header.select("div.gs_ri")) {
@@ -2485,7 +2500,7 @@ public class WebCrawler {
 						}
 
 					}
-				}*/
+				}
 				
 				if (vertexId == 1) {
 					indexPage(doc.title(), new URL(normalize(doc.location())), vertexId, srcId);// Here
@@ -2553,21 +2568,14 @@ public class WebCrawler {
 
 			// Explore cited links
 			Elements body = doc.select("div#gs_ccl_results");
-
 			for (Element header : body) {
 				for (Element e : header.select("div.gs_ri")) {
 					String newData = "";
 					Elements citedBy = e.select("div.gs_fl");
-					// for (Element citedBy : e.select("div.gs_fl")) {
 					for (int i = 0; i < 6; i++) {
-						// if(citedBy.select("a").text().contains("Cited
-						// by")){
-
 						String citedURL = citedBy.select("a").attr("href");
 						citedURL = normalize(citedURL, startUrl);
 						urlsFound.add(new URL(citedURL));
-
-						// if(citedBy.select("a").text().equals("Cite")){
 						if (i == 4) {
 							String citeMethod = citedBy.select("a").attr("onclick");
 							// return gs_ocit(event,'DsP4TAnh57YJ','0')
@@ -2593,15 +2601,9 @@ public class WebCrawler {
 								newData += str;
 							}
 						}
-
-						// }
-						/*
-						 * vertexId++; indexPage(newData, new
-						 * URL(normalize(doc.location())), vertexId, sourceId);
-						 */
 					}
 					vertexId++;
-					indexPage(newData, new URL(normalize(doc.location())), vertexId, sourceId);
+					indexPage(newData, new URL(normalize(doc.location())), vertexId, sourceId);//works fine for 1st call
 				}
 
 			}

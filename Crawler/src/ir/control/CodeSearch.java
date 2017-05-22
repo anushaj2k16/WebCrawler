@@ -47,9 +47,11 @@ public class CodeSearch {
 			/**Configurable variables */
 			String dir = "default_index";
 			boolean createIndex=true; //Signals if the index should be created or read from the directory.
-			int depth= 2;
+			int depth= 1;
 			//String urlSeed="http://stackoverflow.com/questions/17535514/lucene-highlighter";
-			String urlSeed="https://scholar.google.de/scholar?hl=en&q=rdbms&as_sdt=1%2C5&as_sdtp=&oq=rd";
+			//String urlSeed="https://scholar.google.de/scholar?hl=en&q=rdbms&as_sdt=1%2C5&as_sdtp=&oq=rd";
+			String urlSeed="https://scholar.google.de/scholar?q=rdbms&hl=en&lr=lang_en&as_sdt=0,5";
+
 			List<URL> seeds= new ArrayList<URL>(); //Seeds to be passed as input
 		
 			/**
