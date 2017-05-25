@@ -160,7 +160,6 @@ public class WebCrawler {
 
 	/** Singleton instance of type WebCrawler */
 	private static WebCrawler instance = null;
-
 	/** Configurable variables */
 
 	/**
@@ -169,7 +168,7 @@ public class WebCrawler {
 	 * message that will be printed during the crawling proceeds.
 	 */
 	private static boolean VERBOSE = true;
-
+	private static int sourceId = -1;
 	private static int vertexId = 0;
 	private static Object vertexId_lock = new int[1];
 
@@ -261,6 +260,8 @@ public class WebCrawler {
 	 * depth.
 	 */
 	private List<ItemUrl> tentativeUrls = new ArrayList<ItemUrl>();
+	
+	private List<ItemUrl> urlfound = new ArrayList<ItemUrl>();
 	/** Lock for synchronized access to tentativeUrls */
 	private Object tentativeUrls_lock = new int[1];
 
@@ -692,7 +693,6 @@ public class WebCrawler {
 																		// simply
 																		// index
 					List<URL> newPages = new ArrayList<URL>();
-					int vid = 0;
 					try {// Now we index the page from the first URL and obtain
 							// a list of it's outlinks
 
@@ -708,12 +708,12 @@ public class WebCrawler {
 							}
 						}
 						// Here we have the url of the source page.
-						synchronized (vertexId_lock) {
+						/*synchronized (vertexId_lock) {
 							vid = ++vertexId;
-						}
+						}*/
+						
 						//from seed url gets to visit next citedby links
-						newPages = threads.get(0).crawlAndIndexPage(nextUrls.get(0).getUrl(), vid,
-								nextUrls.get(0).getSrcId(), resetIndex); // Note
+						newPages = threads.get(0).crawlAndIndexPage(nextUrls.get(0).getUrl(), nextUrls.get(0).getSrcId(), resetIndex); // Note
 																			// the
 																			// use
 																			// of
@@ -725,8 +725,8 @@ public class WebCrawler {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-					for (URL page : newPages) {
-						tentativeUrls.add(new ItemUrl(page, vid, 1)); // We add
+			/*		for (URL page : newPages) {
+						tentativeUrls.add(new ItemUrl(page, sourceId, 1)); // We add
 																		// the
 																		// outlink
 																		// list
@@ -735,7 +735,7 @@ public class WebCrawler {
 																		// with
 																		// depth
 																		// 1
-					}
+					}*/
 					/**
 					 * Now we carry out steps (1) and (2) and (5) for the list
 					 * of tentativeURLs
@@ -818,11 +818,11 @@ public class WebCrawler {
 								}
 							}
 						}
-						int vid = 0;
+						/*int vid = 0;
 						synchronized (vertexId_lock) {
 							vid = ++vertexId;
-						}
-						threads.get(0).indexPage("", new URL(threads.get(0).normalize(doc.location())), vid, srcId);// Note
+						}*/
+						threads.get(0).crawlAndIndexPage( new URL(threads.get(0).normalize(doc.location())),  srcId,false);// Note
 																													// the
 																													// use
 																													// of
@@ -1905,6 +1905,8 @@ public class WebCrawler {
 			this.id = id;
 		}
 
+	
+
 		/**
 		 * Function in charge of the crawling
 		 * 
@@ -2032,10 +2034,10 @@ public class WebCrawler {
 									}
 									if (!isExcluded(url.getUrl())) {
 										try {
-											synchronized (vertexId_lock) {
+											/*synchronized (vertexId_lock) {
 												vid = ++vertexId;
-											}
-											results = crawlAndIndexPage(url.getUrl(), vid, url.getSrcId(), false);
+											}*/
+											results = crawlAndIndexPage(url.getUrl(), url.getSrcId(), false);
 										} catch (Exception e) {
 											synchronized (nextUrls_lock) {
 												nextUrls.remove(nextUrls2.get(nextUrl));
@@ -2072,8 +2074,8 @@ public class WebCrawler {
 									}
 								}
 								synchronized (tentativeUrls_lock) {
-									for (URL result : results) {
-										tentativeUrls.add(new ItemUrl(result, vid, url.getDepth() + 1));// We
+							/*		for (URL result : results) {
+										tentativeUrls.add(new ItemUrl(result, sourceId, url.getDepth() + 1));// We
 																										// add
 																										// the
 																										// results
@@ -2081,7 +2083,7 @@ public class WebCrawler {
 																										// the
 																										// tentativeUrls
 																										// list.
-									}
+									}*/
 								}
 								if (!wasExcluded)
 									markAsVisited(url.getUrl()); // We mark as
@@ -2128,11 +2130,11 @@ public class WebCrawler {
 												System.out.println("Note:- Only indexing for url:"
 														+ normalize(doc.location()) + " " + id);
 											try {
-												int vid = 0;
+												/*int vid = 0;
 												synchronized (vertexId_lock) {
 													vid = ++vertexId;
-												}
-												indexPage("", new URL(normalize(doc.location())), vid, url.getSrcId());
+												}*/
+												crawlAndIndexPage( new URL(normalize(doc.location())), url.getSrcId(),false);
 											} catch (Exception e) {
 												synchronized (nextUrls_lock) {
 													nextUrls.remove(nextUrls2.get(nextUrl));
@@ -2373,13 +2375,13 @@ public class WebCrawler {
 					}
 					pw = new FileWriter(new File(vertexFileName), true);
 					sb = new StringBuilder();
-					sb.append("id");
+					sb.append("Vertexid");
 					sb.append(',');
-					sb.append("url");
+					sb.append("Cited by");
 					sb.append(',');
 					sb.append("Timestamp");
 					sb.append(',');
-					sb.append("Title");
+					sb.append("metadata");
 					sb.append("  ");
 					pw.write(System.getProperty("line.separator"));
 
@@ -2391,19 +2393,7 @@ public class WebCrawler {
 					LocalDateTime now = LocalDateTime.now();
 					sb.append(dtf_ts.format(now));
 					sb.append(",");
-					String title = "";
-
-					/*
-					 * if(vertexId==1){ title=doc.title(); } else{ Elements body
-					 * =doc.select("div#gs_ccl_top"); for(Element header:body){
-					 * for(Element e: header.select("div#gs_rt_hdr")){
-					 * title=e.select("h2 a").text(); System.out.println(title);
-					 * }
-					 * 
-					 * } }
-					 */
-
-					sb.append(title);
+					sb.append(metadata);
 					pw.write(System.getProperty("line.separator"));
 					pw.write(sb.toString());
 					pw.close();
@@ -2456,7 +2446,7 @@ public class WebCrawler {
 		 * 
 		 * @throws Exception
 		 */
-		private List<URL> crawlAndIndexPage(URL pageLink, int vertexId, int srcId, boolean createIndex)
+		private List<URL> crawlAndIndexPage(URL pageLink, int srcId, boolean isSeedURL)
 				throws Exception {
 			Set<URL> urlsFound = new LinkedHashSet<URL>(); // List for URLs
 															// found in current
@@ -2466,25 +2456,14 @@ public class WebCrawler {
 			org.jsoup.nodes.Document docBibTexCotent = null;
 			String startUrl = pageLink.toString();
 			String baseLink = pageLink.getProtocol() + "://" + pageLink.getHost()
-					+ (pageLink.getPort() > -1 ? ":" + pageLink.getPort() : "");
-			int sourceId = -1;
+					+ (pageLink.getPort() > -1 ? ":" + pageLink.getPort() : "");	
+		
 			// First we retrieve the url passed as input
 			try {
-				
-			/*	URL url = new URL("https://scholar.google.de/scholar?q=rdbms&hl=en&as_sdt=0,5");
-				Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 8080));
-				
-				HttpURLConnection uc = (HttpURLConnection)url.openConnection(proxy);
-				uc.connect();
-				String line = new String();
-				StringBuffer tmp = new StringBuffer();
-				BufferedReader in = new BufferedReader(new InputStreamReader(uc.getInputStream()));
-				while((line = in.readLine()) != null)
-					System.out.println();*/
 				doc = Jsoup.connect(startUrl).userAgent("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1467.0 Safari/537.36").referrer(REFERRER).get();
 				System.out.println(doc.toString());
 				
-			Elements body = doc.select("div#gs_ccl_results");
+	/*		Elements body = doc.select("div#gs_ccl_results");
 				System.out.println("Printing title");
 				for (Element header : body) {
 					for (Element e : header.select("div.gs_ri")) {
@@ -2500,15 +2479,18 @@ public class WebCrawler {
 						}
 
 					}
-				}
+				}*/
 				
-				if (vertexId == 1) {
+				if (isSeedURL) {
+					++vertexId;
 					indexPage(doc.title(), new URL(normalize(doc.location())), vertexId, srcId);// Here
 																								// we
 																								// index
 																								// the
 																								// page
 					sourceId = vertexId;
+				}else{
+					sourceId=srcId;
 				}
 
 				/**
@@ -2565,7 +2547,7 @@ public class WebCrawler {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-
+			String citedURL="";
 			// Explore cited links
 			Elements body = doc.select("div#gs_ccl_results");
 			for (Element header : body) {
@@ -2573,7 +2555,7 @@ public class WebCrawler {
 					String newData = "";
 					Elements citedBy = e.select("div.gs_fl");
 					for (int i = 0; i < 6; i++) {
-						String citedURL = citedBy.select("a").attr("href");
+						 citedURL = citedBy.select("a").attr("href");
 						citedURL = normalize(citedURL, startUrl);
 						urlsFound.add(new URL(citedURL));
 						if (i == 4) {
@@ -2603,7 +2585,8 @@ public class WebCrawler {
 						}
 					}
 					vertexId++;
-					indexPage(newData, new URL(normalize(doc.location())), vertexId, sourceId);//works fine for 1st call
+					indexPage(newData, new URL(normalize(doc.location())), vertexId, sourceId);
+					tentativeUrls.add(new ItemUrl(new URL(citedURL), vertexId, 1));
 				}
 
 			}
