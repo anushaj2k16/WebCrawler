@@ -6,11 +6,17 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import java.net.URI;
+
+import org.apache.commons.collections.map.HashedMap;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -28,44 +34,30 @@ public class microsoftTest
 	private  StringBuilder sb;
 	private  FileWriter vertexFW;
 	private  FileWriter edgeFW;
+	private static int hop=2;
+	private static Map<Object, Object> idsToVisit;
+	private static Map<Object, Object> idsToVisitCopy;
+	private static int idKey=0;
 	static DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH-mm");
 	static LocalDateTime now = LocalDateTime.now();
     public static void main(String[] args) 
     {
     	String JSONResult_seed;
+    	String JSONResult;
     	JSONResult_seed= jsonreqobj.getData("Composite(AA.AuN=='michael stonebraker')" ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId","10");  
-    	jsonreqobj.indexVertex(JSONResult_seed);
-
+    	jsonreqobj.indexVertex(JSONResult_seed); 		
+        hop++;
     	
-  		/*HttpClient httpclient = HttpClients.createDefault();       
-        try
-        {
-        	  URIBuilder builder = new URIBuilder("https://westus.api.cognitive.microsoft.com/academic/v1.0/evaluate");
-              builder.setParameter("expr", "Composite(AA.AuN=='michael stonebraker')");
-              builder.setParameter("model", "latest");
-              builder.setParameter("attributes", "Id,RId,Ti,Y,CC,AA.AuN,AA.AuId" );
-              builder.setParameter("count", "10");    	
-              URI uri = builder.build();
-              HttpGet request = new HttpGet(uri);
-              request.setHeader("Ocp-Apim-Subscription-Key", "dbe029f01ce145f5a41390c981f3bfc5");
-
-            // Request body
-            HttpUriRequest reqEntity = request;    
-            HttpResponse response = httpclient.execute(reqEntity);
-            HttpEntity entity = response.getEntity();
-
-            if (entity != null) 
-            {
-             JSONResult=EntityUtils.toString(entity);
-             System.out.println(JSONResult);
-             jsonreqobj.indexVertex(JSONResult);       		 
-            }
-        }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-        }*/
-        
+        idsToVisitCopy = new HashMap<>();
+        idsToVisitCopy.putAll(idsToVisit);
+	   	 Iterator it = idsToVisitCopy.entrySet().iterator();
+	   	 while (it.hasNext()) {
+	   	 Map.Entry pair = (Map.Entry)it.next();
+	   	 System.out.println(pair.getKey() + " = " + pair.getValue());
+	   	 JSONResult= jsonreqobj.getData("Id="+pair.getValue().toString() ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId","1");
+	   	 jsonreqobj.indexVertex(JSONResult); 
+	    }
+     
     }
 
 
@@ -109,7 +101,7 @@ public class microsoftTest
     
 	 public void indexVertex(String jsonArray){	
 			sb = new StringBuilder();
-			String referenceIds;
+			idsToVisit = new HashMap<>();
 		   if (vertexFileName == null) {
 				vertexFileName = "vertexData" + dtf.format(now) + ".csv";
 				try {
@@ -171,64 +163,32 @@ public class microsoftTest
 			   		sb.append(json.getAsJsonObject().get("Y"));
 			   		vertexFW.write(System.getProperty("line.separator"));
 			   		vertexFW.write(sb.toString());	
-						
-						//String RId="\"" + "RId="+json.getAsJsonObject().get("Id").toString() + "\"";
-						//String citationCount="\"" +json.getAsJsonObject().get("CC").toString()+ "\"";
-						//referenceIds=getData("\"" + Rid + "\"", " \"Id\"", citationCount);*/
 						String JSONResult_edges;
 						String RId= "RId="+json.getAsJsonObject().get("Id").toString() ;
 						String citationCount=json.getAsJsonObject().get("CC").toString();
 						JSONResult_edges=getData(RId, "Id", citationCount);
-						jsonreqobj.indexEdges(json.getAsJsonObject().get("Id").toString(),JSONResult_edges); 
-						
-				  		/*HttpClient httpclient = HttpClients.createDefault();       
-				        try
-				        {
-				        	
-				        	  URIBuilder builder = new URIBuilder("https://westus.api.cognitive.microsoft.com/academic/v1.0/evaluate");
-				              builder.setParameter("expr", RId);
-				              builder.setParameter("model", "latest");
-				              builder.setParameter("attributes", "Id" );
-				              builder.setParameter("count",  citationCount );  
-				              //builder.toString().replaceAll("%22", "");
-				              URI uri = builder.build();
-				              HttpGet request = new HttpGet(uri);
-				              request.setHeader("Ocp-Apim-Subscription-Key", "dbe029f01ce145f5a41390c981f3bfc5");
-
-				            // Request body
-				            HttpUriRequest reqEntity = request;    
-				            HttpResponse response = httpclient.execute(reqEntity);
-				            HttpEntity entity = response.getEntity();
-
-				            if (entity != null) 
-				            {
-				            	referenceIds=EntityUtils.toString(entity);
-				             System.out.println(referenceIds);
-				             jsonreqobj.indexEdges(json.getAsJsonObject().get("Id").toString(),referenceIds);       		 
-				            }
-				        }
-				        catch (Exception e)
-				        {
-				            System.out.println(e.getMessage());
-				        }
-						
-						*/
+						Thread.sleep(5000);
+						jsonreqobj.indexEdges(json.getAsJsonObject().get("Id").toString(),JSONResult_edges); 			  		
 					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 		   		
 			  } 
-			  try {
+			 /* try {
 				  vertexFW.close();
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				} 
+				} */
 			  System.out.println(count);
 	 }
 	 
 	 public void indexEdges(String fromPaperId,String jsonArray){
+		  
 		 sb = new StringBuilder();			
 		   if (edgeFileName == null) {
 				edgeFileName = "edgeData" + dtf.format(now) + ".csv";
@@ -251,6 +211,11 @@ public class microsoftTest
 	   		JsonArray jsonarray = root.getAsJsonArray("entities");
 	   		for(JsonElement json:jsonarray){
 	   			try {
+	   				if(hop==2){
+	   					idKey++;
+		   				idsToVisit.put(idKey, json.getAsJsonObject().get("Id").toString());
+	   				}
+	   				
 		   			sb=new StringBuilder();
 		   			sb.append(fromPaperId);
 			   		sb.append(',');
@@ -267,7 +232,6 @@ public class microsoftTest
 						e.printStackTrace();
 					}
 		   }
-	   
 	 }
 
 }
