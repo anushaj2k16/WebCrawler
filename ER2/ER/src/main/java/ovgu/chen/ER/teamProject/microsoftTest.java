@@ -53,7 +53,7 @@ public class microsoftTest
 	   	 Iterator it = idsToVisitCopy.entrySet().iterator();
 	   	 while (it.hasNext()) {
 	   	 Map.Entry pair = (Map.Entry)it.next();
-	   	 System.out.println(pair.getKey() + " = " + pair.getValue());
+	   	// System.out.println(pair.getKey() + " = " + pair.getValue());
 	   	 JSONResult= jsonreqobj.getData("Id="+pair.getValue().toString() ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId","1");
 	   	 jsonreqobj.indexVertex(JSONResult); 
 	    }
@@ -85,7 +85,7 @@ public class microsoftTest
             if (entity != null) 
             {
               JSONResult=EntityUtils.toString(entity);
-             System.out.println(JSONResult);
+            // System.out.println(JSONResult);
        		 
             }
         }
@@ -167,15 +167,15 @@ public class microsoftTest
 						String RId= "RId="+json.getAsJsonObject().get("Id").toString() ;
 						String citationCount=json.getAsJsonObject().get("CC").toString();
 						JSONResult_edges=getData(RId, "Id", citationCount);
-						Thread.sleep(5000);
+						//Thread.sleep(5000);
 						jsonreqobj.indexEdges(json.getAsJsonObject().get("Id").toString(),JSONResult_edges); 			  		
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
-					} catch (InterruptedException e) {
+					}/* catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
-					}
+					}*/
 		   		
 			  } 
 			 /* try {
@@ -184,7 +184,7 @@ public class microsoftTest
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} */
-			  System.out.println(count);
+			//  System.out.println(count);
 	 }
 	 
 	 public void indexEdges(String fromPaperId,String jsonArray){
