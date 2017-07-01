@@ -1,0 +1,545 @@
+
+Id,Title,Timestamp,Count,Year of publish
+2114303224,"a comparison of approaches to large scale data analysis",2017-06-18 16:16:29,726,2009
+1791587242,"c store a column oriented dbms",2017-06-18 16:16:30,720,2005
+2149576945,"aurora a new model and architecture for data stream management",2017-06-18 16:16:32,1074,2003
+2118828104,"monitoring streams a new class of data management applications",2017-06-18 16:16:33,700,2002
+1577169013,"the end of an architectural era it s time for a complete rewrite",2017-06-18 16:16:34,420,2007
+2044490410,"mapreduce and parallel dbmss friends or foes",2017-06-18 16:16:35,299,2010
+1966764836,"sql databases v nosql databases",2017-06-18 16:16:37,198,2010
+2021589354,"the lowell database research self assessment",2017-06-18 16:16:38,158,2005
+2102475035,"chabot retrieval from a relational database of images",2017-06-18 16:16:38,603,1995
+2155070484,"h store a high performance distributed main memory transaction processing system",2017-06-18 16:16:39,259,2008
+1985229168,"benchmarking cloud serving systems with ycsb",2017-06-18 16:16:41,995,2010
+2110086534,"hive a warehousing solution over a map reduce framework",2017-06-18 16:16:44,805,2009
+2096125134,"delay scheduling a simple technique for achieving locality and fairness in cluster scheduling",2017-06-18 16:16:46,689,2010
+2157355837,"mapreduce a flexible data processing tool",2017-06-18 16:16:47,602,2010
+2125775320,"hadoopdb an architectural hybrid of mapreduce and dbms technologies for analytical workloads",2017-06-18 16:16:49,572,2009
+2339536459,"mapreduce online",2017-06-18 16:16:51,525,2010
+1993892970,"hive a petabyte scale data warehouse using hadoop",2017-06-18 16:16:53,453,2010
+2013409485,"spanner google s globally distributed database",2017-06-18 16:16:55,437,2013
+2013344760,"haloop efficient iterative data processing on large clusters",2017-06-18 16:16:57,443,2010
+2109574129,"data intensive applications challenges techniques and technologies a survey on big data",2017-06-18 16:16:59,380,2014
+2044490410,"mapreduce and parallel dbmss friends or foes",2017-06-18 16:17:02,299,2010
+2157954477,"toward scalable systems for big data analytics a technology tutorial",2017-06-18 16:17:03,206,2014
+1845494277,"large scale incremental processing using distributed transactions and notifications",2017-06-18 16:17:05,292,2010
+2091765165,"runtime measurements in the cloud observing analyzing and reducing variance",2017-06-18 16:17:07,339,2010
+2044936152,"parallel data processing with mapreduce a survey",2017-06-18 16:17:09,303,2012
+2126399065,"data intensive text processing with mapreduce",2017-06-18 16:17:11,358,2009
+2110104287,"reining in the outliers in map reduce clusters using mantri",2017-06-18 16:17:13,305,2010
+2155072926,"the hibench benchmark suite characterization of the mapreduce based data analysis",2017-06-18 16:17:15,251,2010
+2010279913,"the performance of mapreduce an in depth study",2017-06-18 16:17:17,273,2010
+2036260704,"big data and cloud computing current state and future opportunities",2017-06-18 16:17:18,256,2011
+2163291889,"the case for evaluating mapreduce performance using workload suites",2017-06-18 16:17:20,239,2011
+2104993419,"interactive analytical processing in big data systems a cross industry study of mapreduce workloads",2017-06-18 16:17:22,236,2012
+2139072600,"shark sql and rich analytics at scale",2017-06-18 16:17:24,207,2013
+2151930506,"efficient parallel set similarity joins using mapreduce",2017-06-18 16:17:26,277,2010
+2043099794,"a comparison of join algorithms for log processing in mapreduce",2017-06-18 16:17:27,266,2010
+2158865579,"the hadoop distributed filesystem balancing portability and performance",2017-06-18 16:17:29,142,2010
+2110173188,"a survey of large scale data management approaches in cloud environments",2017-06-18 16:17:31,196,2011
+2038412523,"spark sql relational data processing in spark",2017-06-18 16:17:33,156,2015
+2035543557,"hadoop making a yellow elephant run like a cheetah without it even noticing",2017-06-18 16:17:34,238,2010
+2115583184,"hadoop gis a high performance spatial data warehousing system over mapreduce",2017-06-18 16:17:36,168,2013
+2132497824,"an evaluation of alternative architectures for transaction processing in the cloud",2017-06-18 16:17:38,181,2010
+2140509629,"skewtune mitigating skew in mapreduce applications",2017-06-18 16:17:40,188,2012
+2060280513,"nephele pacts a programming model and execution framework for web scale analytical processing",2017-06-18 16:17:42,184,2010
+2038705219,"a survey of multiple classifier systems as hybrid systems",2017-06-18 16:17:43,219,2014
+2139058102,"predicting the performance of virtual machine migration",2017-06-18 16:17:45,142,2010
+2052312648,"bigbench towards an industry standard benchmark for big data analytics",2017-06-18 16:17:47,138,2013
+2172220707,"rcfile a fast and space efficient data placement structure in mapreduce based warehouse systems",2017-06-18 16:17:49,147,2011
+2150478767,"bigdatabench a big data benchmark suite from internet services",2017-06-18 16:17:51,139,2014
+2112564224,"spanner google s globally distributed database",2017-06-18 16:17:52,208,2012
+2159023601,"online optimization for scheduling preemptable tasks on iaas cloud systems",2017-06-18 16:17:55,175,2012
+2015911750,"10 rules for scalable performance in simple operation datastores",2017-06-18 16:17:57,73,2011
+2061601738,"processing theta joins using mapreduce",2017-06-18 16:17:59,148,2011
+2083541728,"hyracks a flexible and extensible foundation for data intensive computing",2017-06-18 16:18:01,132,2011
+2126547925,"mrshare sharing across multiple queries in mapreduce",2017-06-18 16:18:03,150,2010
+2044849727,"the madlib analytics library or mad skills the sql",2017-06-18 16:18:05,125,2012
+2144461192,"shark fast data analysis using coarse grained distributed memory",2017-06-18 16:18:06,63,2012
+2017751491,"energy management for mapreduce clusters",2017-06-18 16:18:08,145,2010
+2102294813,"cohadoop flexible data placement and its exploitation in hadoop",2017-06-18 16:18:09,119,2011
+2158056686,"the family of mapreduce and large scale data processing systems",2017-06-18 16:18:12,74,2013
+1746258828,"making sense of performance in data analytics frameworks",2017-06-18 16:18:13,64,2015
+2153889808,"automatic optimization for mapreduce programs",2017-06-18 16:18:15,124,2011
+2125520775,"map join reduce toward scalable and efficient data analysis on large clusters",2017-06-18 16:18:16,107,2011
+1568832590,"spatialhadoop a mapreduce framework for spatial data",2017-06-18 16:18:18,71,2015
+2154138844,"a survey of large scale analytical query processing in mapreduce",2017-06-18 16:18:20,82,2014
+2103337291,"ysmart yet another sql to mapreduce translator",2017-06-18 16:18:22,87,2011
+2055533652,"efficient big data processing in hadoop mapreduce",2017-06-18 16:18:24,71,2012
+2141249441,"scale up vs scale out for hadoop time to rethink",2017-06-18 16:18:25,73,2013
+2097745829,"inside big data management ogres onions or parfaits",2017-06-18 16:18:28,68,2012
+2121142115,"a platform for scalable one pass analytics using mapreduce",2017-06-18 16:18:29,102,2011
+2119208045,"towards optimal resource provisioning for running mapreduce programs in public clouds",2017-06-18 16:18:31,85,2011
+2139102017,"optimizing mapreduce for multicore architectures",2017-06-18 16:18:32,72,2010
+2141267666,"skew resistant parallel processing of feature extracting scientific user defined functions",2017-06-18 16:18:34,76,2010
+2083854694,"distributed data management using mapreduce",2017-06-18 16:18:35,71,2014
+2123866731,"can the elephants handle the nosql onslaught",2017-06-18 16:18:37,46,2012
+2114854276,"column oriented storage techniques for mapreduce",2017-06-18 16:18:39,81,2011
+2040728701,"sparkbench a comprehensive benchmarking suite for in memory data analytic platform spark",2017-06-18 16:18:42,30,2015
+2169251528,"scidb a database management system for applications with complex analytics",2017-06-18 16:18:44,39,2013
+2148156428,"toward a standard benchmark for computer security research the worldwide intelligence network environment wine",2017-06-18 16:18:46,47,2011
+1485408073,"big data with cloud computing an insight on the computing environment mapreduce and programming frameworks",2017-06-18 16:18:57,53,2014
+2169325838,"an efficient multi tier tablet server storage architecture",2017-06-18 16:18:59,24,2011
+188726702,"chukwa a system for reliable large scale log collection",2017-06-18 16:19:01,52,2010
+2157838639,"wimpy node clusters what about non wimpy workloads",2017-06-18 16:19:03,47,2010
+1995797177,"apriori based frequent itemset mining algorithms on mapreduce",2017-06-18 16:19:04,76,2012
+2035355147,"trojan data layouts right shoes for a running elephant",2017-06-18 16:19:07,60,2011
+2083036816,"only aggressive elephants are fast elephants",2017-06-18 16:19:09,65,2012
+2022865143,"manimal relational optimization for data intensive programs",2017-06-18 16:19:10,42,2010
+2141711298,"priter a distributed framework for prioritized iterative computations",2017-06-18 16:19:12,69,2011
+2132793058,"relational cloud the case for a database service",2017-06-18 16:19:14,30,2010
+2086747090,"integrating hadoop and parallel dbms",2017-06-18 16:19:16,39,2010
+2139205321,"the haloop approach to large scale iterative data analysis",2017-06-18 16:19:18,63,2012
+2093634202,"hadooptosql a mapreduce query optimizer",2017-06-18 16:19:19,46,2010
+2016829627,"efficient processing of data warehousing queries in a split execution environment",2017-06-18 16:19:21,51,2011
+2140030920,"hadi mining radii of large graphs",2017-06-18 16:19:23,68,2011
+2140690054,"fusion cubes towards self service business intelligence",2017-06-18 16:19:25,39,2013
+2081186283,"sparql basic graph pattern processing with iterative mapreduce",2017-06-18 16:19:26,49,2010
+2221106743,"an architecture for fast and general data processing on large clusters",2017-06-18 16:19:28,16,2016
+2049400253,"hadoop s adolescence an analysis of hadoop usage in scientific workloads",2017-06-18 16:19:30,46,2013
+2058963211,"enabling active storage on parallel i o software stacks",2017-06-18 16:19:33,46,2010
+2109125344,"delay tails in mapreduce scheduling",2017-06-18 16:19:35,54,2012
+1569778844,"vc3 trustworthy data analytics in the cloud using sgx",2017-06-18 16:19:36,42,2015
+2076164405,"sailfish a framework for large scale data processing",2017-06-18 16:19:38,44,2012
+2265297126,"asterixdb a scalable open source bdms",2017-06-18 16:19:40,41,2014
+2113671562,"scalable clustering algorithm for n body simulations in a shared nothing cluster",2017-06-18 16:19:42,38,2010
+2009872315,"towards energy efficient database cluster design",2017-06-18 16:19:43,31,2012
+2340519882,"efficiency matters",2017-06-18 16:19:45,37,2010
+2090452820,"adaptive mapreduce using situation aware mappers",2017-06-18 16:19:47,43,2012
+2141862445,"distributed cube materialization on holistic measures",2017-06-18 16:19:49,38,2011
+2030059621,"hsim a mapreduce simulator in enabling cloud computing",2017-06-18 16:19:51,44,2013
+2071598946,"analytical performance models for mapreduce workloads",2017-06-18 16:19:53,28,2013
+1756536912,"optimizing data shuffling in data parallel computation by understanding user defined functions",2017-06-18 16:19:55,39,2012
+91199005,"radius plots for mining tera byte scale graphs algorithms patterns and observations",2017-06-18 16:19:57,43,2010
+2244876453,"trill a high performance incremental query processor for diverse analytics",2017-06-18 16:19:59,39,2014
+2082224081,"on the elasticity of nosql databases over cloud management platforms",2017-06-18 16:20:00,35,2011
+2027720485,"stubby a transformation based optimizer for mapreduce workflows",2017-06-18 16:20:02,45,2012
+2121858643,"evaluation of mapreduce for gridding lidar data",2017-06-18 16:20:04,24,2010
+2156546605,"rafting mapreduce fast recovery on the raft",2017-06-18 16:20:06,44,2011
+2062163414,"mapreduce indexing strategies studying scalability and efficiency",2017-06-18 16:20:07,38,2012
+2091262118,"towards building a high performance spatial query system for large scale medical imaging data",2017-06-18 16:20:09,24,2012
+2041780659,"miso souping up big data query processing with a multistore system",2017-06-18 16:20:11,23,2014
+1969299781,"low latency geo distributed data analytics",2017-06-18 16:20:14,22,2015
+1544148736,"bdgs a scalable big data generator suite in big data benchmarking",2017-06-18 16:20:15,36,2014
+2003500287,"pigsparql mapping sparql to pig latin",2017-06-18 16:20:17,44,2011
+2038685484,"clydesdale structured data processing on mapreduce",2017-06-18 16:20:19,32,2012
+2408005307,"fast energy efficient scan inside flash memory",2017-06-18 16:20:21,17,2011
+137331274,"benchmarking in the cloud what it should can and cannot be",2017-06-18 16:20:23,33,2012
+299741479,"predicting and optimizing system utilization and performance via statistical machine learning",2017-06-18 16:20:24,18,2009
+2118566694,"hadoop performance modeling for job estimation and resource provisioning",2017-06-18 16:20:26,9,2016
+2399133307,"handling data skew in mapreduce",2017-06-18 16:20:28,44,2016
+2152323874,"analyzing massive astrophysical datasets can pig hadoop or a relational dbms help",2017-06-18 16:20:30,39,2009
+1996887076,"towards a scalable and robust multi tenancy saas",2017-06-18 16:20:31,30,2010
+2148199553,"benchmarking cloud based data management systems",2017-06-18 16:20:33,35,2010
+2170856775,"breaking the mapreduce stage barrier",2017-06-18 16:20:35,36,2010
+279457913,"from tpc c to big data benchmarks a functional workload model",2017-06-18 16:20:37,19,2012
+2124771077,"prominence of mapreduce in big data processing",2017-06-18 16:20:39,18,2014
+2090673017,"a latency and fault tolerance optimizer for online parallel query plans",2017-06-18 16:20:40,29,2011
+1597017619,"epic an extensible and scalable system for processing big data",2017-06-18 16:20:42,29,2014
+104692656,"the seven deadly sins of cloud computing research",2017-06-18 16:20:44,30,2012
+2049160854,"hadoopdb in action building real world applications",2017-06-18 16:20:46,41,2010
+1963669090,"a big data architecture for large scale security monitoring",2017-06-18 16:20:47,23,2014
+2112173609,"mapreduce with communication overlap marco",2017-06-18 16:20:49,22,2013
+2133613202,"speeding up large scale point in polygon test based spatial join on gpus",2017-06-18 16:20:51,34,2012
+2010150096,"invisible loading access driven data transfer from raw files into database systems",2017-06-18 16:20:53,27,2013
+2290378225,"research on cloud databases",2017-06-18 16:20:54,8,2012
+2044782420,"glade a scalable framework for efficient analytics",2017-06-18 16:20:56,20,2012
+1903120171,"hitune dataflow based performance analysis for big data cloud",2017-06-18 16:20:57,29,2011
+2039589115,"towards scalable rdf graph analytics on mapreduce",2017-06-18 16:20:59,29,2010
+2001475825,"data management for the internet of things design primitives and solution",2017-06-18 16:21:01,19,2013
+2027748129,"instant loading for main memory databases",2017-06-18 16:21:03,32,2013
+2071215178,"mapreduce limitations optimizations and open issues",2017-06-18 16:21:04,19,2013
+1992191167,"glade big data analytics made easy",2017-06-18 16:21:06,37,2012
+2007901510,"full text indexing for optimizing selection operations in large scale data analytics",2017-06-18 16:21:08,27,2011
+2011486541,"parallel programming paradigms and frameworks in big data era",2017-06-18 16:21:10,24,2014
+2087177601,"hawq a massively parallel processing sql engine in hadoop",2017-06-18 16:21:12,17,2014
+2113000065,"parallel implementation of classification algorithms based on cloud computing environment",2017-06-18 16:21:13,14,2012
+1514255017,"an approach for mapreduce based log analysis using hadoop",2017-06-18 16:21:15,3,2015
+2092809259,"open source cloud computing tools a case study with a weather application",2017-06-18 16:21:17,19,2010
+1528380545,"high throughput data compression for cloud storage",2017-06-18 16:21:19,28,2010
+2133722186,"data intensive cloud computing requirements expectations challenges and solutions",2017-06-18 16:21:20,27,2013
+2116018104,"parallel visualization on large clusters using mapreduce",2017-06-18 16:21:22,24,2011
+1978162812,"efficient or hadoop why not both",2017-06-18 16:21:24,5,2013
+1713648379,"prism privacy preserving search in mapreduce",2017-06-18 16:21:26,26,2012
+1978150957,"improving resource utilization in mapreduce",2017-06-18 16:21:27,18,2012
+2025500887,"an ontology enhanced parallel svm for scalable spam filter training",2017-06-18 16:21:29,23,2013
+77466636,"mapreduce and pact comparing data parallel programming models",2017-06-18 16:21:31,27,2011
+1562945126,"toward efficient querying of compressed network payloads",2017-06-18 16:21:33,6,2012
+2013326020,"constructing gazetteers from volunteered big geo data based on hadoop",2017-06-18 16:21:34,35,2017
+2063580340,"conducting quantitative software engineering studies with alitheia core",2017-06-18 16:21:36,5,2014
+1993226606,"track join distributed joins with minimal network traffic",2017-06-18 16:21:37,24,2014
+1974213702,"dot a matrix model for analyzing optimizing and deploying software for big data analytics in distributed systems",2017-06-18 16:21:39,28,2011
+1547205936,"optimizing data partitioning for data parallel computing",2017-06-18 16:21:41,21,2011
+2018716937,"open911 experiences with the mobile plus cloud paradigm",2017-06-18 16:21:43,7,2011
+2000872079,"on interference aware provisioning for cloud based big data processing",2017-06-18 16:21:44,17,2013
+2199096058,"massively parallel databases and mapreduce systems",2017-06-18 16:21:46,20,2013
+2022486753,"benchmarking mapreduce implementations for application usage scenarios",2017-06-18 16:21:48,19,2011
+2154614053,"cloudramsort fast and efficient large scale distributed ram sort on shared nothing cluster",2017-06-18 16:21:50,20,2012
+2016901333,"issues in big data testing and benchmarking",2017-06-18 16:21:51,9,2013
+192156609,"discussion of bigbench a proposed industry standard performance benchmark for big data",2017-06-18 16:21:53,12,2014
+2037577508,"building cubes with mapreduce",2017-06-18 16:21:55,22,2011
+2045063824,"optimus a dynamic rewriting framework for data parallel execution plans",2017-06-18 16:21:57,12,2013
+1996635806,"think big with big data identifying suitable big data strategies in corporate environments",2017-06-18 16:21:58,14,2014
+2048525559,"mrcrypt static analysis for secure cloud computations",2017-06-18 16:22:00,20,2013
+2001040824,"join processing using bloom filter in mapreduce",2017-06-18 16:22:01,20,2012
+2017828380,"priter a distributed framework for prioritizing iterative computations",2017-06-18 16:22:04,17,2013
+2150678734,"performance evaluation of range queries in key value stores",2017-06-18 16:22:05,11,2011
+1498439332,"providing scalable database services on the cloud",2017-06-18 16:22:07,20,2010
+2054153667,"characterizing and subsetting big data workloads",2017-06-18 16:22:08,19,2014
+2113250622,"parallel secondo boosting database engines with hadoop",2017-06-18 16:22:10,21,2012
+2139299835,"understanding query performance in accumulo",2017-06-18 16:22:12,8,2013
+1973124645,"mastiff a mapreduce based system for time based big data analytics",2017-06-18 16:22:14,13,2012
+33602388,"a study of sql on hadoop systems",2017-06-18 16:22:15,5,2014
+2080224910,"towards zero overhead static and adaptive indexing in hadoop",2017-06-18 16:22:17,19,2014
+2035099707,"a control theoretic approach for energy efficient management of online social network services",2017-06-18 16:22:18,1,2013
+1970217364,"data and task parallelism in ilp using mapreduce",2017-06-18 16:22:20,24,2012
+204770603,"gray s laws database centric computing in science",2017-06-18 16:22:22,19,2009
+75400543,"a comparison of mapreduce and parallel database management systems",2017-06-18 16:22:23,5,2013
+2005242604,"federation in cloud data management challenges and opportunities",2017-06-18 16:22:25,10,2014
+2185937698,"join algorithms using map reduce",2017-06-18 16:22:27,14,2010
+2046804219,"jackhare a framework for sql to nosql translation using mapreduce",2017-06-18 16:22:29,10,2014
+1984029466,"big data processing with hadoop mapreduce in cloud systems",2017-06-18 16:22:30,14,2012
+1950783232,"data placement and replica selection for improving co location in distributed environments",2017-06-18 16:22:32,15,2013
+1973582313,"a parallel spatial data analysis infrastructure for the cloud",2017-06-18 16:22:33,13,2013
+2336571897,"jumbo beyond mapreduce for workload balancing",2017-06-18 16:22:35,17,2010
+1499119471,"service oriented business intelligence",2017-06-18 16:22:37,12,2012
+2063512404,"building wavelet histograms on large data in mapreduce",2017-06-18 16:22:39,25,2011
+2168389951,"sword workload aware data placement and replica selection for cloud data management systems",2017-06-18 16:22:40,16,2014
+2231989249,"towards an integrated platform for big data analysis",2017-06-18 16:22:42,14,2013
+2156921718,"power efficient networking for balanced system designs early experiences with pcie",2017-06-18 16:22:43,6,2011
+2103894743,"datagarage warehousing massive performance data on commodity servers",2017-06-18 16:22:45,14,2010
+2021724486,"emerging trends in the enterprise data analytics connecting hadoop and db2 warehouse",2017-06-18 16:22:47,15,2011
+1986565174,"towards personal high performance geospatial computing hpc g perspectives and a case study",2017-06-18 16:22:48,23,2010
+1562158306,"rapid enabling scalable ad hoc analytics on the semantic web",2017-06-18 16:22:50,25,2009
+29282068,"workload driven design and evaluation of large scale data centric systems",2017-06-18 16:22:52,1,2012
+1967142657,"hone joint host network traffic management in software defined networks",2017-06-18 16:22:54,9,2015
+2577022150,"towards a comprehensive set of big data benchmarks",2017-06-18 16:22:55,4,2014
+1975769195,"iotabench an internet of things analytics benchmark",2017-06-18 16:22:57,12,2015
+2086453770,"feasibility analysis of big log data real time search based on hbase and elasticsearch",2017-06-18 16:22:59,9,2013
+2146974095,"cloud computing for geosciences deployment of geoss clearinghouse on amazon s ec2",2017-06-18 16:23:01,23,2010
+1597198211,"caching and materialization for web databases",2017-06-18 16:23:02,13,2010
+1677938650,"data intensive technologies for cloud computing",2017-06-18 16:23:04,15,2010
+2105712473,"using mapreduce to scale events correlation discovery for business processes mining",2017-06-18 16:23:06,11,2012
+2048287062,"a performance evaluation of hive for scientific data management",2017-06-18 16:23:08,3,2013
+2170634549,"etlmr a highly scalable dimensional etl framework based on mapreduce",2017-06-18 16:23:10,16,2011
+2036228459,"high performance spatial query processing for large scale scientific data",2017-06-18 16:23:11,11,2012
+1961849064,"multimedia applications and security in mapreduce opportunities and challenges",2017-06-18 16:23:13,8,2012
+2143787382,"bdms performance evaluation practices pitfalls and possibilities",2017-06-18 16:23:15,9,2012
+2029701617,"scalable entity based summarization of web search results using mapreduce",2017-06-18 16:23:17,12,2014
+2171220798,"jvm bypass for efficient hadoop shuffling",2017-06-18 16:23:18,11,2013
+1497089183,"scalable and adaptive online joins",2017-06-18 16:23:20,16,2014
+2018337085,"benchmarking dependability of mapreduce systems",2017-06-18 16:23:22,18,2012
+2068665379,"phidj parallel similarity self join for high dimensional vector data with mapreduce",2017-06-18 16:23:24,12,2014
+2140928415,"towards scalable one pass analytics using mapreduce",2017-06-18 16:23:25,8,2011
+2070511907,"enterprise database applications and the cloud a difficult road ahead",2017-06-18 16:23:27,4,2014
+2437797956,"computational health informatics in the big data age a survey",2017-06-18 16:23:28,5,2016
+2079696050,"modeling the performance of the hadoop online prototype",2017-06-18 16:23:31,10,2011
+1519276763,"rhea automatic filtering for unstructured cloud storage",2017-06-18 16:23:33,9,2013
+1974470627,"towards a workload for evolutionary analytics",2017-06-18 16:23:34,7,2013
+2006107063,"improving the efficiency of subset queries on raster images",2017-06-18 16:23:36,5,2011
+2118457725,"high performance spatial queries for spatial big data from medical imaging to gis",2017-06-18 16:23:37,5,2015
+2042043574,"towards a general infrastructure for location based smart mobility services",2017-06-18 16:23:39,4,2014
+148693950,"one a predictable and scalable dw model",2017-06-18 16:23:41,10,2011
+1997932142,"the next generation operational data historian for iot based on informix",2017-06-18 16:23:43,6,2014
+2415420807,"workload characterization and optimization of tpc h queries on apache spark",2017-06-18 16:23:44,5,2016
+2470240345,"big data benchmark compendium",2017-06-18 16:23:46,4,2015
+2221398285,"bigfun a performance study of big data management system functionality",2017-06-18 16:23:48,2,2015
+2548941637,"hippogriffdb balancing i o and gpu bandwidth in big data analytics",2017-06-18 16:23:50,1,2016
+1565405831,"on the benefits of transparent compression for cost effective cloud data storage",2017-06-18 16:23:51,13,2011
+2183241612,"vc3 trustworthy data analytics in the cloud",2017-06-18 16:23:53,13,2014
+2146983726,"data vitalization a new paradigm for large scale dataset analysis",2017-06-18 16:23:54,13,2010
+2327208758,"we don t know enough to make a big data benchmark suite an academia industry view",2017-06-18 16:23:56,10,2012
+2073292325,"algebraic optimization for processing graph pattern queries in the cloud",2017-06-18 16:23:58,7,2013
+2113343450,"cogset a high performance mapreduce engine",2017-06-18 16:23:59,8,2013
+2087252221,"benchmarking mapreduce implementations under different application scenarios",2017-06-18 16:24:01,7,2014
+2149958576,"optimizing and tuning mapreduce jobs to improve the large scale data analysis process",2017-06-18 16:24:03,11,2013
+2616328094,"a what if engine for cost based mapreduce optimization",2017-06-18 16:24:05,10,2013
+2167870444,"extracting weblog of siam university for learning user behavior on mapreduce",2017-06-18 16:24:07,7,2012
+2522709217,"how do i choose the right nosql solution a comprehensive theoretical and experimental survey",2017-06-18 16:24:08,5,2016
+2061716419,"tiramola elastic nosql provisioning through a cloud management platform",2017-06-18 16:24:10,12,2012
+333272690,"distributed parallel architecture for big data",2017-06-18 16:24:12,13,2012
+2333167668,"ts hadoop handling access skew in mapreduce by using tiered storage infrastructure",2017-06-18 16:24:14,2,2014
+2022678827,"cloudetl scalable dimensional etl for hive",2017-06-18 16:24:15,8,2014
+2516521180,"parallel processing systems for big data a survey",2017-06-18 16:24:17,1,2016
+2408045830,"building highly optimized low latency pipelines for genomic data analysis",2017-06-18 16:24:19,7,2015
+1984399651,"jummp job uninterrupted maneuverable mapreduce platform",2017-06-18 16:24:21,9,2013
+2060570063,"handling big data efficiently by using map reduce technique",2017-06-18 16:24:22,6,2015
+2171094780,"an empirical performance evaluation of distributed sql query engines",2017-06-18 16:24:24,4,2015
+22394099,"a bigbench implementation in the hadoop ecosystem",2017-06-18 16:24:25,7,2013
+2036787492,"sharing across multiple mapreduce jobs",2017-06-18 16:24:27,4,2014
+2584551900,"sparkbench a spark benchmarking suite characterizing large scale in memory data analytics",2017-06-18 16:24:29,0,2017
+2399407902,"large scale linked data processing cloud computing to the rescue",2017-06-18 16:24:31,9,2012
+2150273265,"activity based sector synchronisation efficient transfer of disk state for wan live migration",2017-06-18 16:24:32,6,2011
+1594718716,"on big data benchmarking",2017-06-18 16:24:34,6,2014
+2152143040,"using index in the mapreduce framework",2017-06-18 16:24:36,8,2010
+2087715056,"an adaptive auto configuration tool for hadoop",2017-06-18 16:24:38,5,2014
+2138790433,"a mapreduce based distributed lsi for scalable information retrieval",2017-06-18 16:24:39,8,2014
+2167819441,"intelligent reconfigurable method of cloud computing resources for multimedia data delivery",2017-06-18 16:24:41,8,2013
+2036019975,"map reduce on emf models",2017-06-18 16:24:43,6,2012
+2089795257,"a predictable storage model for scalable parallel dw",2017-06-18 16:24:45,6,2011
+2131027594,"dgfindex for smart grid enhancing hive with a cost effective multidimensional range index",2017-06-18 16:24:46,8,2014
+2133719836,"a review of energy efficiency technology in computer servers and cluster systems",2017-06-18 16:24:47,2,2011
+2018169156,"a deep embedding of queries into ruby",2017-06-18 16:24:49,7,2012
+1985635698,"rankloud a scalable ranked query processing framework on hadoop",2017-06-18 16:24:51,9,2011
+2091736440,"visreduce fast and responsive incremental information visualization of large datasets",2017-06-18 16:24:53,11,2013
+2585491945,"evaluating the impact of data placement to spark and scidb with an earth science use case",2017-06-18 16:24:55,1,2016
+2035835764,"e3 an elastic execution engine for scalable data processing",2017-06-18 16:24:57,10,2012
+2471307381,"sparkbench a spark performance testing suite",2017-06-18 16:24:59,6,2015
+2178686517,"commapreduce an improvement of mapreduce with lightweight communication mechanisms",2017-06-18 16:25:01,10,2012
+1966113438,"a survey on xml fragmentation",2017-06-18 16:25:02,3,2014
+2339750579,"a comparative analysis of join algorithms using the hadoop map reduce framework",2017-06-18 16:25:04,11,2009
+2134113644,"scalla a platform for scalable one pass analytics using mapreduce",2017-06-18 16:25:05,9,2012
+1984002948,"a platform for big data analytics on distributed scale out storage system",2017-06-18 16:25:07,8,2015
+2072927190,"asset queries a declarative alternative to mapreduce",2017-06-18 16:25:09,8,2009
+2133873540,"supporting web based visual exploration of large scale raster geospatial data using binned min max quadtree",2017-06-18 16:25:11,10,2010
+2048312304,"btworld towards observing the global bittorrent file sharing network",2017-06-18 16:25:12,9,2010
+2188957490,"the trill incremental analytics engine",2017-06-18 16:25:14,3,2014
+2324899592,"comparative study of big data computing and storage tools a review",2017-06-18 16:25:16,4,2016
+2087909221,"dynamically optimizing queries over large scale data platforms",2017-06-18 16:25:18,8,2014
+1567346565,"chronos an elastic parallel framework for stream benchmark generation and simulation",2017-06-18 16:25:19,3,2015
+2010879210,"parallel bulk insertion for large scale analytics applications",2017-06-18 16:25:21,6,2010
+2136118237,"performance evaluation of range queries in key value stores",2017-06-18 16:25:23,7,2012
+2318012141,"analytical review on hadoop distributed file system",2017-06-18 16:25:25,4,2014
+2029405541,"optimization of multi join query processing within mapreduce",2017-06-18 16:25:26,3,2010
+2184516195,"towards a complete bigbench implementation",2017-06-18 16:25:27,3,2014
+20627724,"big data technologies and potential",2017-06-18 16:25:29,4,2014
+2059368095,"challenges and trends of big data analytics",2017-06-18 16:25:31,3,2014
+2187146589,"hadoop s overload tolerant design exacerbates failure detection and recovery",2017-06-18 16:25:33,11,2011
+2002533683,"cartilage adding flexibility to the hadoop skeleton",2017-06-18 16:25:34,3,2013
+1507516418,"lineardb a relational approach to make data warehouse scale like mapreduce",2017-06-18 16:25:36,9,2011
+2059298213,"a performance comparison of parallel dbmss and mapreduce on large scale text analytics",2017-06-18 16:25:37,4,2013
+2134701320,"stemscopes contextualizing learning analytics in a k 12 science curriculum",2017-06-18 16:25:40,9,2013
+2117551773,"a study on big data integration with data warehouse",2017-06-18 16:25:41,5,2014
+2579169324,"fast in memory sql analytics on typed graphs",2017-06-18 16:25:43,3,2016
+2461884057,"nobody ever got fired for buying a cluster",2017-06-18 16:25:44,6,2013
+161828409,"rdbms model for scientific articles analytics",2017-06-18 16:25:46,6,2012
+1834656309,"data warehousing technologies for large scale and right time data",2017-06-18 16:25:48,3,2012
+1974477293,"cluster size scaling and mapreduce execution times",2017-06-18 16:25:50,6,2013
+2187025990,"scalagist scalable generalized search trees for mapreduce systems innovative systems paper",2017-06-18 16:25:52,10,2014
+1565980122,"geographical information systems trends and technologies",2017-06-18 16:25:54,4,2014
+1813630675,"tradeoffs between parallel database systems hadoop and hadoopdb as platforms for petabyte scale analysis",2017-06-18 16:25:56,7,2010
+2597276661,"characterizing and diagnosing out of memory errors in mapreduce applications",2017-06-18 16:25:57,0,2017
+1578159153,"liquid benchmarks towards an online platform for collaborative assessment of computer science research results",2017-06-18 16:25:59,5,2010
+2140317551,"a strategy for incorporating learning analytics into the design and evaluation of a k 12 science curriculum",2017-06-18 16:26:00,6,2014
+1976972454,"cogset a unified engine for reliable storage and parallel processing",2017-06-18 16:26:02,10,2009
+2221512497,"towards methods for systematic research on big data",2017-06-18 16:26:04,4,2015
+2099342990,"query driven frequent co occurring term computation over relational data using mapreduce",2017-06-18 16:26:06,1,2015
+2080695821,"scalable clustering using pact programming model",2017-06-18 16:26:07,1,2012
+8861657,"i o characterization of big data workloads in data centers",2017-06-18 16:26:09,5,2014
+2040395858,"clydesdale structured data processing on hadoop",2017-06-18 16:26:11,7,2012
+2040907046,"efficient query processing framework for big data warehouse an almost join free approach",2017-06-18 16:26:13,4,2015
+2058917948,"minimizing remote accesses in mapreduce clusters",2017-06-18 16:26:15,3,2013
+2338990447,"mapreduce complements dbmss since databases are not designed for extract transform load tasks a mapreduce specialty",2017-06-18 16:26:16,0,2010
+2241684952,"experience report a characteristic study on out of memory errors in distributed data parallel applications",2017-06-18 16:26:18,1,2015
+1969186495,"handling data skew effects in join operations using mapreduce",2017-06-18 16:26:20,7,2014
+1971890972,"paradise big data analytics using the dbms tightly integrated with the distributed file system",2017-06-18 16:26:21,3,2016
+1659263304,"in storage processing of database scans and joins",2017-06-18 16:26:23,2,2016
+2101293592,"paralite supporting collective queries in database system to parallelize user defined executable",2017-06-18 16:26:25,6,2012
+2035738188,"kanthaka big data caller detail record cdr analyzer for near real time telecom promotions",2017-06-18 16:26:27,4,2013
+2144844496,"genome sequence analysis with monetdb a case study on ebola virus diversity",2017-06-18 16:26:29,4,2015
+2338995669,"mapreduce advantages over parallel databases include storage system independence and fine grain fault tolerance for large jobs",2017-06-18 16:26:30,0,2010
+2065431209,"k mapreduce a scalable tool for data processing and search ensemble applications on large scale supercomputers",2017-06-18 16:26:32,3,2013
+2126396161,"bigop generating comprehensive big data workloads as a benchmarking framework",2017-06-18 16:26:33,4,2014
+2215846677,"high performance analysis of big spatial data",2017-06-18 16:26:35,1,2015
+2502914135,"foundations for the web of information and services",2017-06-18 16:26:37,4,2011
+2465146196,"advances in large scale metrology review and future trends",2017-06-18 16:26:38,2,2016
+1974637590,"elasticity in cloud databases and their query processing",2017-06-18 16:26:40,3,2013
+2075947452,"a framework for building hypercubes using mapreduce",2017-06-18 16:26:42,6,2014
+2040346433,"elastic mapreduce execution",2017-06-18 16:26:44,2,2014
+1992465941,"towards model driven engineering for big data analytics an exploratory analysis of domain specific languages for machine learning",2017-06-18 16:26:46,3,2014
+2593596805,"dot k a distributed online top k elements algorithm using extreme value statistics",2017-06-18 16:26:48,0,2016
+2090890182,"alovera a fast stream processing system for large scale data",2017-06-18 16:26:49,0,2013
+2159423955,"shark sql and analytics with cost based query optimization on coarse grained distributed memory",2017-06-18 16:26:51,2,2014
+2266757592,"bigdatabench mt a benchmark tool for generating realistic mixed data center workloads",2017-06-18 16:26:53,3,2015
+1936301603,"a novel monitoring mechanism by event trigger for hadoop system performance analysis",2017-06-18 16:26:54,4,2014
+2396018516,"techniques for securing a centralized metadata distributed filesystem",2017-06-18 16:26:56,1,2012
+1757129951,"analysis of iptv user behaviors with mapreduce",2017-06-18 16:26:57,3,2012
+19158736,"parallelizing support vector machines for scalable image annotation",2017-06-18 16:26:59,6,2011
+2398098221,"generalized parallel join algorithms and designing cost models",2017-06-18 16:27:01,4,2012
+2035484480,"reducing mapreduce abstraction costs for text centric applications",2017-06-18 16:27:03,1,2014
+2146619143,"cogset vs hadoop measurements and analysis",2017-06-18 16:27:04,8,2010
+2270580340,"optimization for iterative queries on mapreduce",2017-06-18 16:27:06,7,2013
+2070917020,"a model architecture for big data applications using relational databases",2017-06-18 16:27:08,4,2014
+2400730279,"what if mixing technologies for big data mining and queries optimization",2017-06-18 16:27:10,2,2015
+2296412986,"pagerank pipeline benchmark proposal for a holistic system benchmark for big data platforms",2017-06-18 16:27:11,1,2016
+2286385760,"betl mapreduce checkpoint tactics beneath the task level",2017-06-18 16:27:13,0,2016
+2121229732,"maintaining a microbial genome metagenome data analysis system in an academic setting",2017-06-18 16:27:15,3,2014
+2077827062,"the dynamically efficient mechanism of hdfs data prefetching",2017-06-18 16:27:17,3,2013
+2306821251,"optex a deadline aware cost optimization model for spark",2017-06-18 16:27:18,1,2016
+6307799,"revisiting aggregation for data intensive applications a performance study",2017-06-18 16:27:19,1,2013
+2567162135,"comparative evaluation of big data systems on scientific image analytics workloads",2017-06-18 16:27:21,1,2016
+2094119142,"the problem with data",2017-06-18 16:27:22,1,2014
+2113716811,"a mr simulator in facilitating cloud computing",2017-06-18 16:27:24,3,2013
+2619976846,"declarative systems",2017-06-18 16:27:25,0,2011
+2438952228,"hawk hardware support for unstructured log processing",2017-06-18 16:27:27,1,2016
+2070479980,"rect improving mapreduce performance under failures with resilient checkpointing tactics",2017-06-18 16:27:30,1,2014
+597285385,"an adaptive skew insensitive join algorithm for large scale data analytics",2017-06-18 16:27:32,3,2014
+2024447534,"propeller a scalable real time file search service in distributed systems",2017-06-18 16:27:34,3,2014
+1997249077,"discovering influential authors in heterogeneous academic networks by a co ranking method",2017-06-18 16:27:35,6,2013
+2143549364,"use of mapreduce for data mining and data optimization on a web portal",2017-06-18 16:27:37,4,2012
+2138159499,"a switch criterion for hybrid datasets merging on top of map reduce",2017-06-18 16:27:39,3,2009
+1982334848,"thermal modeling and analysis of storage systems",2017-06-18 16:27:41,9,2012
+1508141492,"big data processing systems state of the art and open challenges",2017-06-18 16:27:42,2,2015
+1965377123,"brown dwarf a fully distributed fault tolerant data warehousing system",2017-06-18 16:27:44,6,2011
+2284194374,"ic data improving compressed data processing in hadoop",2017-06-18 16:27:45,2,2015
+1987405857,"a computational framework for spatially explicit agroecosystem modeling application to regional simulation",2017-06-18 16:27:48,3,2013
+2058991476,"simulating hive cluster for deployment planning evaluation and optimization",2017-06-18 16:27:50,2,2014
+1994408342,"towards improved load balancing for data intensive distributed computing",2017-06-18 16:27:52,3,2011
+158715319,"experience from hadoop benchmarking with hibench from micro benchmarks toward end to end pipelines",2017-06-18 16:27:54,3,2013
+1992165934,"emf modeling in traffic surveillance experiments",2017-06-18 16:27:56,2,2012
+2602033679,"providing efficient scalable and privacy preserved verification mechanism in remote attestation",2017-06-18 16:27:57,1,2016
+2116985078,"data pipeline in mapreduce",2017-06-18 16:27:59,3,2013
+159736446,"large scale data analytics",2017-06-18 16:28:00,3,2014
+2136582761,"towards efficient resource management for data analytic platforms",2017-06-18 16:28:02,1,2011
+2146812825,"prolog programming with a map reduce parallel construct",2017-06-18 16:28:04,2,2013
+2073897588,"vsfs a searchable distributed file system",2017-06-18 16:28:06,2,2014
+2147320702,"load balancing in mapreduce environments for data intensive applications",2017-06-18 16:28:07,4,2011
+1731459909,"comparing hadoop and fat btree based access method for small file i o applications",2017-06-18 16:28:09,2,2010
+1974170295,"utilizing a nosql data store for scalable log analysis",2017-06-18 16:28:11,2,2015
+1490880108,"when good enough is enough complex queries at fixed cost",2017-06-18 16:28:13,1,2015
+2334418087,"leaky buffer a novel abstraction for relieving memory pressure from cluster data processing frameworks",2017-06-18 16:28:14,0,2017
+2194610383,"isodac a high performance solution for indexing and searching heterogeneous data",2017-06-18 16:28:16,2,2016
+2071404190,"towards automated personalized data storage",2017-06-18 16:28:17,1,2014
+2016536803,"towards benchmarking stream data warehouses",2017-06-18 16:28:19,5,2012
+2090825549,"scdp scalable cost effective distributed and parallel computing model for academics",2017-06-18 16:28:21,4,2011
+1993237969,"analyzing web application log files to find hit count through the utilization of hadoop mapreduce in cloud computing environment",2017-06-18 16:28:23,2,2014
+149859995,"overcoming the scalability limitations of parallel star schema data warehouses",2017-06-18 16:28:24,3,2012
+2166030567,"integrating dbmss as a read only execution layer into hadoop",2017-06-18 16:28:26,3,2010
+2028353786,"inkrementelle neuberechnungen in mapreduce",2017-06-18 16:28:28,2,2013
+2253033883,"lubase a search efficient hybrid storage system for massive text data",2017-06-18 16:28:30,0,2015
+1985122517,"a fast face recognition algorithm based on mapreduce",2017-06-18 16:28:31,0,2014
+2064025796,"hadoop based enhanced cloud architecture for bioinformatic algorithms",2017-06-18 16:28:33,1,2014
+2411385775,"towards a comprehensive data analytics framework for smart healthcare services",2017-06-18 16:28:34,3,2016
+1643237236,"benchmarking datastax enterprise cassandra with hibench",2017-06-18 16:28:36,2,2014
+2027046491,"a mapreduce approach for processing large scale remote sensing images",2017-06-18 16:28:38,4,2012
+2325124267,"defining understanding and addressing big data",2017-06-18 16:28:39,2,2016
+2061344115,"modeling and optimizing large scale data flows",2017-06-18 16:28:41,2,2014
+2395085127,"distributed parallel architecture for storing and processing large datasets",2017-06-18 16:28:43,2,2012
+1987404650,"big data benchmarking",2017-06-18 16:28:45,4,2012
+2014991691,"thermal modeling and analysis of cloud data storage systems",2017-06-18 16:28:46,2,2014
+2430301697,"the snowflake elastic data warehouse",2017-06-18 16:28:47,1,2016
+163588221,"modeling and storing complex network with graph tree",2017-06-18 16:28:49,2,2013
+2046315183,"nativetask a hadoop compatible framework for high performance",2017-06-18 16:28:51,3,2013
+2078337479,"enabling distributed key value stores with low latency impact snapshot support",2017-06-18 16:28:53,0,2013
+1975158745,"massive image editing on the cloud",2017-06-18 16:28:54,1,2011
+2061130200,"optimizing a mapreduce module of preprocessing high throughput dna sequencing data",2017-06-18 16:28:56,3,2013
+2145095554,"handling big data on agent based modeling of online social networks with mapreduce",2017-06-18 16:28:58,0,2014
+2067988331,"integrating mapreduce and rdbmss",2017-06-18 16:29:00,4,2010
+2171782669,"semantic technologies and cloud computing",2017-06-18 16:29:01,6,2011
+2174850999,"benchmarking sql on hadoop systems tpc or not tpc",2017-06-18 16:29:03,2,2014
+183136791,"optimizing database load and extract for big data era",2017-06-18 16:29:04,2,2014
+2183176970,"flexible and extensible foundation for data intensive computing",2017-06-18 16:29:06,0,2011
+2591970795,"design and evaluation of small large outer joins in cloud computing environments",2017-06-18 16:29:08,0,2017
+2241609746,"performance characterization of modern databases on out of order cpus",2017-06-18 16:29:10,1,2015
+2109025678,"improving performance of hadoop clusters",2017-06-18 16:29:11,1,2011
+1568244666,"the case for object databases in cloud data management",2017-06-18 16:29:13,4,2010
+2462235680,"big data management in the cloud evolution or crossroad",2017-06-18 16:29:15,2,2015
+65802527,"the case of big mobility data",2017-06-18 16:29:17,2,2014
+2041766944,"towards realistic benchmarking for cloud file systems early experiences",2017-06-18 16:29:18,2,2014
+2049470338,"elta new approach in designing business intelligence solutions in era of big data",2017-06-18 16:29:20,4,2014
+146142016,"at the frontiers of information and software as services",2017-06-18 16:29:22,4,2011
+2460227403,"generalization of large scale data processing in one mapreduce job for coarse grained parallelism",2017-06-18 16:29:24,2,2016
+1607887266,"design and implementation of a metadata rich file system",2017-06-18 16:29:26,4,2010
+2025156160,"a web platform for the assessment of competences in mobile learning contexts",2017-06-18 16:29:27,2,2014
+2040488734,"enabling active data archival over cloud",2017-06-18 16:29:29,1,2012
+2584041701,"the state of sql on hadoop in the cloud",2017-06-18 16:29:30,0,2016
+2117707942,"just in time data distribution for analytical query processing",2017-06-18 16:29:33,0,2012
+2292355743,"a survey on mapreduce scheduling in cloud computing",2017-06-18 16:29:34,0,2015
+92081020,"graphdb storing large graphs on secondary memory",2017-06-18 16:29:35,1,2014
+2316926581,"comparison of table join execution time for parallel dbms and mapreduce",2017-06-18 16:29:37,1,2014
+2048213016,"the strategic ip insight platform siip a foundation for discovery",2017-06-18 16:29:39,1,2014
+2270087109,"d ocean an unstructured data management system for data ocean environment",2017-06-18 16:29:41,1,2016
+1974135807,"massive structured data management solution",2017-06-18 16:29:42,1,2010
+2388496688,"a survey on text based indexing techniques in hadoop",2017-06-18 16:29:44,1,2013
+2293244088,"efficient and flexible index access in mapreduce",2017-06-18 16:29:46,1,2014
+2084276196,"otpm failure handling in data intensive analytical processing",2017-06-18 16:29:48,1,2011
+1992472913,"comparative study parallel join algorithms for mapreduce environment",2017-06-18 16:29:49,2,2012
+2183639151,"international journal of data warehousing and mining",2017-06-18 16:29:51,0,2013
+2062224013,"hydb access optimization for data intensive service",2017-06-18 16:29:52,1,2012
+2188775537,"performance evaluation of enterprise big data platforms with hibench",2017-06-18 16:29:54,1,2015
+2054846549,"mapreduce model based optimization of range queries",2017-06-18 16:29:56,4,2012
+2559959930,"smallclient for big data an indexing framework towards fast data retrieval",2017-06-18 16:29:58,3,2016
+2584495429,"hpta high performance text analytics",2017-06-18 16:29:59,0,2016
+1874851952,"the efficiency of mapreduce in parallel external memory",2017-06-18 16:30:01,2,2012
+2553100249,"optimizing hadoop parameter settings with gene expression programming guided pso hadoop parameter settings with gene expression programming guided pso",2017-06-18 16:30:03,1,2017
+2539160705,"cdr analysis using big data technology",2017-06-18 16:30:05,1,2015
+161094716,"automatic tuning of data intensive analytical workloads",2017-06-18 16:30:06,1,2012
+2120079464,"the case for being lazy how to leverage lazy evaluation in mapreduce",2017-06-18 16:30:08,2,2011
+2229578264,"benchmarking performance for migrating a relational application to a parallel implementation",2017-06-18 16:30:09,1,2016
+1768757514,"mpdbs a multi level parallel database system based on b tree",2017-06-18 16:30:12,0,2015
+2155617143,"thermal modeling of hybrid storage clusters",2017-06-18 16:30:13,3,2013
+1978451448,"efficient and reliable hybrid cloud architechture for big data",2017-06-18 16:30:15,2,2013
+2467041498,"big data 2 0 processing systems taxonomy and open challenges",2017-06-18 16:30:17,3,2016
+2186779230,"a survey of the state of the art in event processing",2017-06-18 16:30:19,2,2013
+2071395074,"benchmarking sql on mapreduce systems using large astronomy databases",2017-06-18 16:30:21,1,2016
+2345811193,"experience with benchmarking dependability and performance of mapreduce systems",2017-06-18 16:30:22,2,2016
+791400509,"nosql approach to large scale analysis of persisted streams",2017-06-18 16:30:24,1,2015
+2021298267,"a visualization architecture for collaborative analytical and data provenance activities",2017-06-18 16:30:25,2,2013
+2088465817,"evaluating data storage structures of mapreduce",2017-06-18 16:30:27,1,2013
+2237951083,"the partition cost model for load balancing in mapreduce",2017-06-18 16:30:29,2,2012
+2555239569,"online aggregation using mapreduce in mongodb",2017-06-18 16:30:31,2,2013
+2149410377,"halt or continue estimating progress of queries in the cloud",2017-06-18 16:30:32,1,2012
+2547065261,"optimization of task assignment strategy for map reduce",2017-06-18 16:30:34,3,2012
+2412910640,"neuropigpen a scalable toolkit for processing electrophysiological signal data in neuroscience applications using apache pig",2017-06-18 16:30:37,0,2016
+2403815336,"processing wikipedia dumps a case study comparing the xgrid and mapreduce approaches",2017-06-18 16:30:38,1,2011
+2441875704,"on managing geospatial big data in emergency management some perspectives",2017-06-18 16:30:40,1,2015
+2402424816,"a proposal of a big web data application and archive for the distributed data processing with apache hadoop",2017-06-18 16:30:41,1,2015
+2033819769,"simple and efficient coupling of hadoop with a database engine",2017-06-18 16:30:44,0,2013
+62471537,"an economical query cost model in the cloud",2017-06-18 16:30:45,2,2013
+2503165499,"driving big data with hadoop technologies",2017-06-18 16:30:47,1,2014
+2504675053,"macaca a scalable and energy efficient platform for coupling cloud computing with distributed embedded computing",2017-06-18 16:30:48,1,2016
+2039277099,"a theoretical model for big data analytics using machine learning algorithms",2017-06-18 16:30:50,1,2015
+1967413385,"mipt rapid exploration and evaluation for migrating sequential algorithms to multiprocessing systems with multi port memories",2017-06-18 16:30:51,2,2014
+2182502496,"an empirical performance evaluation of distributed sql query engines extended report",2017-06-18 16:30:53,1,2014
+2200330886,"ecl hpcc a unified approach to big data",2017-06-18 16:30:55,3,2011
+2096445347,"hadoop and hive as scalable alternatives to rdbms a case study",2017-06-18 16:30:57,1,2012
+45043279,"abstract state machines for data parallel computing",2017-06-18 16:30:59,0,2012
+2171541518,"logical optimization of dataflows for data mining and integration processes",2017-06-18 16:31:00,2,2010
+2547804802,"quill efficient transferable and rich analytics at scale",2017-06-18 16:31:02,0,2016
+2594611252,"isolate first then share a new os architecture for the worst case performance",2017-06-18 16:31:03,1,2016
+2113639745,"octopusdb flexible and scalable storage management for arbitrary database engines",2017-06-18 16:31:05,0,2012
+127804522,"using mapreduce to scale event correlation discovery for process mining",2017-06-18 16:31:07,1,2014
+2473552705,"user s interpretations of features in visualization",2017-06-18 16:31:09,0,2014
+841867597,"scalable queries over log database collections",2017-06-18 16:31:10,0,2015
+2135741713,"big data analysis and query optimization improve hadoopdb performance",2017-06-18 16:31:12,1,2014
+2324749769,"automatic extraction of topics on big data streams through scalable advanced analysis",2017-06-18 16:31:14,3,2014
+1982140537,"data analyzing using map join reduce in cloud storage",2017-06-18 16:31:16,1,2014
+2227532222,"a mapreduce approach to nosql rdf databases",2017-06-18 16:31:17,0,2016
+2184202562,"high performance cloud data management",2017-06-18 16:31:19,0,2013
+54198399,"providing flexible file level data filtering for big data analytics",2017-06-18 16:31:20,1,2014
+2296061154,"mr cof a genetic mapreduce configuration optimization framework",2017-06-18 16:31:22,1,2015
+2616075985,"a multifactorial obesity model developed from nationwide public health exposome data and modern computational analyses",2017-06-18 16:31:24,0,2017
+960443171,"performance comparison of big data technologies in locating intersections in satellite ground tracks",2017-06-18 16:31:26,1,2014
+2336090475,"system and method for proactive task scheduling of a copy of outlier task in a computing environment",2017-06-18 16:31:27,0,2010
+2184426316,"cost effective resource configurations for executing data intensive workloads in public clouds",2017-06-18 16:31:29,1,2013
+2001430738,"dynlw balancing and scalability for heavy dynamic stream db workloads",2017-06-18 16:31:31,0,2014
+2584069253,"binary a framework for big data integration for ad hoc querying",2017-06-18 16:31:33,0,2016
+2091461034,"introducing an intelligent mapreduce framework for distributed data processing in clouds",2017-06-18 16:31:34,0,2013
+2594137098,"a study on hadoop architecture for big data analytics",2017-06-18 16:31:36,1,2014
+253952821,"comparing and analyzing the energy efficiency of cloud database and parallel database",2017-06-18 16:31:37,2,2012
+2024369140,"a hybrid system for analyzing very large graphs",2017-06-18 16:31:39,0,2012
+1015378603,"benchmarking big data systems state of the art and future directions",2017-06-18 16:31:41,1,2015
+1832733075,"identifying dwarfs workloads in big data analytics",2017-06-18 16:31:43,1,2015
+2125500859,"exploiting memory locality in distributed key value stores",2017-06-18 16:31:44,0,2011
+39570539,"assessing the performance impact of high speed interconnects on mapreduce",2017-06-18 16:31:46,3,2012
+2575848086,"kcgs store a columnar storage based on group sorting of key columns",2017-06-18 16:31:48,0,2016
+1983770274,"analyzing the waiting energy consumption of nosql databases",2017-06-18 16:31:51,0,2014
+1983428441,"parallel quadtree encoding of large scale raster geospatial data on multicore cpus and gpgpus",2017-06-18 16:31:52,3,2014
+1987489978,"optimization of relational database usage involving big data a model architecture for big data applications",2017-06-18 16:31:54,2,2014
+2521920119,"a scalability comparison study of data management approaches for smart metering systems",2017-06-18 16:31:57,0,2016
+1012644065,"computing cluster with latency control",2017-06-18 16:31:59,0,2012
+2139608611,"model of cloud based services for data mining analysis",2017-06-18 16:32:00,1,2015
+2094046969,"cwmwl a linda based paas fabric for the cloud",2017-06-18 16:32:02,1,2014
+2340761641,"on horizontal decomposition of the operating system",2017-06-18 16:32:04,0,2016
+1985915845,"safer home analytics a big data analytical solution for smart homes",2017-06-18 16:32:06,0,2013
+2108072933,"parallel secondo scalable query processing in the cloud for non standard applications",2017-06-18 16:32:08,1,2015
+2560030740,"application assisted writeback for hadoop clusters",2017-06-18 16:32:09,0,2016
+2196354524,"big data and analytics issues challenges and opportunities",2017-06-18 16:32:11,1,2015
+2222823054,"efficient scalable and versatile application and system transaction management for direct storage layers",2017-06-18 16:32:13,0,2012
+2049106778,"dynamic provisioning of data intensive computing middleware frameworks a case study",2017-06-18 16:32:15,1,2015
+2025752039,"data management tools for scientific analytics",2017-06-18 16:32:16,0,2011
+2121517838,"automatic scaling of selective sparql joins using the tiramola system",2017-06-18 16:32:18,2,2012
+2188179155,"technical report mapreduce based similarity joins",2017-06-18 16:32:20,1,2012
+888825260,"g2p a partitioning approach for processing dbscan with mapreduce",2017-06-18 16:32:22,1,2015
+72236954,"a resource aware distributed lsi algorithm for scalable information retrieval",2017-06-18 16:32:24,1,2011
+105379577,"big data abstraction through multiagent 

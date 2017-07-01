@@ -17,6 +17,7 @@ import com.google.gson.JsonParser;
 import java.net.URI;
 
 import org.apache.commons.collections.map.HashedMap;
+import org.apache.commons.lang.enums.Enum;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -31,9 +32,17 @@ public class microsoftTest
 	private static microsoftTest jsonreqobj=new microsoftTest();
 	private  String vertexFileName;
 	private  String edgeFileName;
+	private  String authorFileName;
+	private  String UpstreamFileName;
 	private  StringBuilder sb;
+	DateTimeFormatter uniqueId_ts = DateTimeFormatter.ofPattern("yyyyMMddhhmmss");
+	DateTimeFormatter dtf_ts = DateTimeFormatter.ofPattern("yyyy-MM-ddHH:mm:ss");
 	private  FileWriter vertexFW;
+	private int i=0;
 	private  FileWriter edgeFW;
+	private  FileWriter upstreamFW;
+	private  FileWriter authorFW;
+	private String authorNames; 
 	private static int hop=2;
 	private static Map<Object, Object> idsToVisit;
 	private static Map<Object, Object> idsToVisitCopy;
@@ -42,12 +51,16 @@ public class microsoftTest
 	static LocalDateTime now = LocalDateTime.now();
     public static void main(String[] args) 
     {
+    	
     	String JSONResult_seed;
     	String JSONResult;
-    	JSONResult_seed= jsonreqobj.getData("Composite(AA.AuN=='michael stonebraker')" ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId","10");  
+    	//JSONResult_seed= jsonreqobj.getData("Composite(AA.AuN=='michael stonebraker')" ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId","10");  
+    	JSONResult_seed= jsonreqobj.getData("And(And(Ti='a relational model of data for large shared data banks',Composite(AA.AuN=='e f codd')),Y=1970)" ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId","10");
+    	System.out.println("Indexing started");
     	jsonreqobj.indexVertex(JSONResult_seed); 		
         hop++;
     	
+        int count=0;
         idsToVisitCopy = new HashMap<>();
         idsToVisitCopy.putAll(idsToVisit);
 	   	 Iterator it = idsToVisitCopy.entrySet().iterator();
@@ -56,8 +69,9 @@ public class microsoftTest
 	   	// System.out.println(pair.getKey() + " = " + pair.getValue());
 	   	 JSONResult= jsonreqobj.getData("Id="+pair.getValue().toString() ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId","1");
 	   	 jsonreqobj.indexVertex(JSONResult); 
+	   	 System.out.println(count++);
 	    }
-     
+     System.out.println("Indexing ends");
     }
 
 
@@ -85,7 +99,7 @@ public class microsoftTest
             if (entity != null) 
             {
               JSONResult=EntityUtils.toString(entity);
-            // System.out.println(JSONResult);
+            System.out.println(JSONResult);
        		 
             }
         }
@@ -103,20 +117,28 @@ public class microsoftTest
 			sb = new StringBuilder();
 			idsToVisit = new HashMap<>();
 		   if (vertexFileName == null) {
-				vertexFileName = "vertexData" + dtf.format(now) + ".csv";
+				vertexFileName = "papers" + dtf.format(now) + ".csv";
 				try {
 					vertexFW = new FileWriter(new File(vertexFileName), true);
-					sb.append("Id");
+					sb.append("UniqueId");
+					sb.append(',');
+					sb.append("PaperId");
 					sb.append(',');
 					sb.append("Title");
 					sb.append(',');
-					sb.append("Timestamp");
+					sb.append("PublishInYear");
 					sb.append(',');
-					sb.append("Author Names");
+					sb.append("TimestampAdded");
 					sb.append(',');
-					sb.append("Count");
+					sb.append("TimestampLastVisited");
 					sb.append(',');
-					sb.append("Year of publish");
+					sb.append("TimestampMod");
+					//sb.append(',');
+					//sb.append("Author Names");
+					//sb.append(',');
+					//sb.append("Count");
+					//sb.append(',');
+					//sb.append("PublishInYear");
 					vertexFW.write(System.getProperty("line.separator"));
 					vertexFW.write(sb.toString());
 				} catch (IOException e1) {
@@ -125,13 +147,13 @@ public class microsoftTest
 				}			
 			}
 		   
-		    String authorNames;
-		    int count=0;
+		   // String authorNames;
+		   // int count=0;
 		   		JsonObject root = new JsonParser().parse(jsonArray).getAsJsonObject();
 		   		JsonArray jsonarray = root.getAsJsonArray("entities");
 		   		for(JsonElement json:jsonarray){
-		   			count++;
-		   			authorNames=new String();
+		   			//count++;
+		   			//authorNames=new String();
 		   				   					   			
 		   	//	System.out.println(json.getAsJsonObject());
 		   	//	System.out.println(json.getAsJsonObject().get("Id"));
@@ -139,30 +161,38 @@ public class microsoftTest
 		   	//	System.out.println(json.getAsJsonObject().get("CC"));
 		   	//	System.out.println(json.getAsJsonObject().get("Y"));
 		   			   		
-		   		JsonObject author = json.getAsJsonObject();
-		   		JsonArray authorarray = author.getAsJsonArray("AA");
+		   		//JsonObject author = json.getAsJsonObject();
+		   		//JsonArray authorarray = author.getAsJsonArray("AA");
 		   		
-		   		for(JsonElement author_json:authorarray){
+		   	/*	for(JsonElement author_json:authorarray){
 		   			authorNames=authorNames+author_json.getAsJsonObject().get("AuN");
-		   		}
+		   		}*/
 		   		
 		   		try {
+			   		LocalDateTime now = LocalDateTime.now();
 		   			sb=new StringBuilder();
+		   			sb.append(uniqueId_ts.format(now)+"-"+"001"+"-"+"01"+"-"+((i++)%99));
+			   		sb.append(',');
 		   			sb.append(json.getAsJsonObject().get("Id"));
 			   		sb.append(',');
-			   		sb.append(json.getAsJsonObject().get("Ti"));
-			   		sb.append(',');
-			   		DateTimeFormatter dtf_ts = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-			   		LocalDateTime now = LocalDateTime.now();
-			   		sb.append(dtf_ts.format(now));
-			   		sb.append(",");
-			   		sb.append(authorNames);
-			   		sb.append(',');
-			   		sb.append(json.getAsJsonObject().get("CC"));
+			   		sb.append(json.getAsJsonObject().get("Ti").toString().replaceAll("^\"|\"$", ""));
 			   		sb.append(',');
 			   		sb.append(json.getAsJsonObject().get("Y"));
+			   		sb.append(','); 		
+			   		sb.append(dtf_ts.format(now));
+			   		sb.append(",");
+			   		sb.append(dtf_ts.format(now));
+			   		sb.append(",");
+			   		sb.append(dtf_ts.format(now));
+			   		sb.append(",");
+			   		//sb.append(authorNames);
+			   		//sb.append(',');
+			   		//sb.append(json.getAsJsonObject().get("CC"));
+			   		//sb.append(',');
+			   		//sb.append(json.getAsJsonObject().get("Y"));
 			   		vertexFW.write(System.getProperty("line.separator"));
 			   		vertexFW.write(sb.toString());	
+			   		jsonreqobj.indexAuthor(json.getAsJsonObject().get("Id").toString(), jsonArray);
 						String JSONResult_edges;
 						String RId= "RId="+json.getAsJsonObject().get("Id").toString() ;
 						String citationCount=json.getAsJsonObject().get("CC").toString();
@@ -191,9 +221,11 @@ public class microsoftTest
 		  
 		 sb = new StringBuilder();			
 		   if (edgeFileName == null) {
-				edgeFileName = "edgeData" + dtf.format(now) + ".csv";
+				edgeFileName = "cited_by" + dtf.format(now) + ".csv";
 				try {
 					edgeFW = new FileWriter(new File(edgeFileName), true);
+					sb.append("UniqueId");
+					sb.append(',');
 					sb.append("FromPaperId");
 					sb.append(',');
 					sb.append("CitedPaperId");
@@ -217,6 +249,8 @@ public class microsoftTest
 	   				}
 	   				
 		   			sb=new StringBuilder();
+		   			sb.append(uniqueId_ts.format(now)+"-"+"001"+"-"+"01"+"-"+((i++)%99));
+			   		sb.append(',');
 		   			sb.append(fromPaperId);
 			   		sb.append(',');
 			   		sb.append(json.getAsJsonObject().get("Id"));
@@ -233,5 +267,113 @@ public class microsoftTest
 					}
 		   }
 	 }
+	 
+	 public String getUniqueId(){
+		return  (uniqueId_ts.format(now)+"-"+"001"+"-"+"01"+"-"+((i++)%99));
+	 }
 
+	 public void indexAuthor(String fromPaperId,String jsonArray){
+		 authorNames=new String();
+		 sb = new StringBuilder();			
+		   if (authorFileName == null) {
+			   authorFileName = "author" + dtf.format(now) + ".csv";
+				try {
+					authorFW = new FileWriter(new File(authorFileName), true);
+					sb.append("UniqueId");
+					sb.append(',');
+					sb.append("PaperId");
+					sb.append(',');
+					sb.append("Author Name");
+					authorFW.write(System.getProperty("line.separator"));
+					authorFW.write(sb.toString());
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}			
+			}
+		   
+		   JsonObject root = new JsonParser().parse(jsonArray).getAsJsonObject();
+	   		JsonArray jsonarray = root.getAsJsonArray("entities");
+	   		for(JsonElement json:jsonarray){
+	   			
+	   			JsonObject author = json.getAsJsonObject();
+	   			JsonArray authorarray = author.getAsJsonArray("AA");
+		   		
+			   	for(JsonElement author_json:authorarray){
+			   			authorNames=authorNames+author_json.getAsJsonObject().get("AuN").toString().replaceAll("^\"|\"$", "");
+			   			authorNames=authorNames+",";
+			   		}		
+			   	authorNames=authorNames.substring(0,authorNames.length()-1);
+	   			try {
+	   				   				
+		   			sb=new StringBuilder();
+		   			sb.append(uniqueId_ts.format(now)+"-"+"001"+"-"+"01"+"-"+((i++)%99));
+			   		sb.append(',');
+		   			sb.append(fromPaperId);
+			   		sb.append(',');
+			   		sb.append(authorNames);
+			   		authorFW.write(System.getProperty("line.separator"));
+			   		authorFW.write(sb.toString());						
+						
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+		   }
+	 }
+	 
+	 public void writeToUpstream(Enum operation,Enum subject, String uniqueId, JsonObject jsonObj){	  
+		 sb = new StringBuilder();			
+		   if (UpstreamFileName == null) {
+			   UpstreamFileName = "cited_by" + dtf.format(now) + ".csv";
+				try {
+					upstreamFW = new FileWriter(new File(UpstreamFileName), true);
+					sb.append("TimeStamp");
+					sb.append(',');
+					sb.append("Operation");
+					sb.append(',');
+					sb.append("Subject");
+					sb.append(',');
+					sb.append("Target");
+					sb.append(',');
+					sb.append("Details");
+					upstreamFW.write(System.getProperty("line.separator"));
+					upstreamFW.write(sb.toString());
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}			
+			}		
+		   			sb=new StringBuilder();
+		   			sb.append(uniqueId_ts.format(now)+"-"+"001"+"-"+"01"+"-"+((i++)%99));
+			   		sb.append(',');
+		   			sb.append(operation);
+			   		sb.append(',');
+			   		sb.append(subject);
+			   		sb.append(',');
+			   		sb.append(uniqueId);
+			   		sb.append(',');
+			   		sb.append(jsonObj);
+			   		try {
+						upstreamFW.write(System.getProperty("line.separator"));
+				   		upstreamFW.write(sb.toString());	
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+								
+						
+					} 
+		    
+	 public enum operation{
+		 CREATE,
+		 UPDATE,
+		 DELETE;
+	 }
+	 
+	 public enum subject{
+		 PAPERS,
+		 CITED_BY,
+		 AUTHORS;
+	 }
 }
