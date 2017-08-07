@@ -7,11 +7,8 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -45,8 +42,9 @@ public class microsoftTest
 	//private Iterator it ;
 	private static int NUM_HOPS=0;
 	private static int TOTAL_HOPS=3;
-	private static Map<Object, Object> idsToVisit;
-	private static Map<Object, Object> idsToVisitCopy;
+	private static Map<Object, Object> idsToVisitofCurrentHop;
+	private static Map<Object, Object> idsToVisitofNextHop;
+
 	private static Map<Object, Object> idsVisited;
 	static DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH-mm");
 	static LocalDateTime now = LocalDateTime.now();
@@ -55,17 +53,19 @@ public class microsoftTest
     {
     	String temp="";
     	int count=0;
-    	idsToVisit = new HashMap<>();
+    	idsToVisitofCurrentHop = new HashMap<>();
+    	idsToVisitofNextHop = new HashMap<>();
         idsVisited=new HashMap<>();
     	String JSONResult_seed;
     	String JSONResult;
-    	JSONResult_seed= jsonreqobj.getData("And(And(Ti='a relational model of data for large shared data banks',Composite(AA.AuN=='e f codd')),Y=1970)" ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId","10","0");
+    	
+    	JSONResult_seed= jsonreqobj.getData("And(And(Ti='a relational model of data for large shared data banks',Composite(AA.AuN=='e f codd')),Y=1970)" ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId,J.JN,J.JId,C.CN,C.CId,S.U,VSN","10","0");
     	System.out.println("Indexing started");
     	jsonreqobj.indexVertex(JSONResult_seed); 		
-        NUM_HOPS++;
+
     
         //idsToVisitCopy.putAll(idsToVisit);
-	   	 Iterator it = idsToVisit.entrySet().iterator();
+	   	 Iterator it = idsToVisitofCurrentHop.entrySet().iterator();
 	   	 
 	   	 while (it.hasNext()) {
 	   
@@ -73,9 +73,9 @@ public class microsoftTest
 		 temp= temp+"Id="+ pair.getKey().toString()+",";
 	   	 count++;
 	   	 if (count==TOTAL_ID_COUNT_TOQUERY|| !(it.hasNext())){ 
-	   		JSONResult= jsonreqobj.getData("OR("+temp.substring(0, temp.length()-1)+")" ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId","120","0");
+	   		JSONResult= jsonreqobj.getData("OR("+temp.substring(0, temp.length()-1)+")" ,"Id,RId,Ti,Y,CC,AA.AuN,AA.AuId,J.JN,J.JId,C.CN,C.CId,S.U,VSN","120","0");
 		   	 jsonreqobj.indexVertex(JSONResult);
-		   	 it = idsToVisit.entrySet().iterator();
+		   	 it = idsToVisitofCurrentHop.entrySet().iterator();
 		     count=0;
 		     temp="";
 	   	 }
@@ -139,10 +139,22 @@ public class microsoftTest
 					sb.append(',');
 					sb.append("PublishInYear");
 					sb.append(',');
+					sb.append("Journal Id");
+					sb.append(',');
+					sb.append("Journal Name");
+					sb.append(',');
+					sb.append("Conference Series Id");
+					sb.append(',');
+					sb.append("Conference Series Name");
+					sb.append(',');
+					sb.append("Source URL");
+					sb.append(',');
+					sb.append("Venue Short Name");
+					sb.append(',');
 					sb.append("TimestampAdded");
 					sb.append(',');
 					sb.append("TimestampLastVisited");
-					sb.append(',');
+					sb.append(',');				
 					sb.append("TimestampMod");
 					vertexFW.write(System.getProperty("line.separator"));
 					vertexFW.write(sb.toString());
@@ -165,7 +177,19 @@ public class microsoftTest
 			   		sb.append(json.getAsJsonObject().get("Ti").toString().replaceAll("^\"|\"$", ""));
 			   		sb.append(',');
 			   		sb.append(json.getAsJsonObject().get("Y"));
-			   		sb.append(','); 		
+			   		sb.append(','); 
+			   		sb.append(json.getAsJsonObject().get("J.JId"));
+			   		sb.append(',');
+			   		sb.append(json.getAsJsonObject().get("J.JN"));
+			   		sb.append(',');
+			   		sb.append(json.getAsJsonObject().get("C.CId"));
+			   		sb.append(',');
+			   		sb.append(json.getAsJsonObject().get("C.CN"));
+			   		sb.append(',');
+			   		sb.append(json.getAsJsonObject().get("S.U"));
+			   		sb.append(',');
+			   		sb.append(json.getAsJsonObject().get("VSN"));
+			   		sb.append(',');
 			   		sb.append(dtf_ts.format(now));
 			   		sb.append(",");
 			   		sb.append(dtf_ts.format(now));
@@ -184,18 +208,26 @@ public class microsoftTest
 						String JSONResult_edges;
 						String RId= "RId="+json.getAsJsonObject().get("Id").toString() ;
 						String citationCount=json.getAsJsonObject().get("CC").toString();
-						JSONResult_edges=getData(RId, "Id", citationCount,Integer.toString(from));
-						
-						//add queried id for edge details to visited list and remove from to visit list
+						JSONResult_edges=getData(RId, "Id,RId", "5",Integer.toString(from));
+						//JSONResult_edges.getAsJsonObject().get("RId").toString().replace("[", "").replace("]", "");
+				   	
+						//add queried id  toVisited list and remove id from toVisit list
 						idsVisited.put(json.getAsJsonObject().get("Id").toString(), NUM_HOPS);
-						if(!idsToVisit.isEmpty()){
-							idsToVisit.remove(json.getAsJsonObject().get("Id").toString());
+						if(!idsToVisitofCurrentHop.isEmpty()){
+							idsToVisitofCurrentHop.remove(json.getAsJsonObject().get("Id").toString());
 						}
 						
 						
 						//write edge data to cited-by.csv file
 						jsonreqobj.indexEdges(json.getAsJsonObject().get("Id").toString(),JSONResult_edges);
 						
+						if(idsToVisitofCurrentHop.size()>0){
+							//do nothing
+						}else{
+							NUM_HOPS++;
+							idsToVisitofCurrentHop.putAll(idsToVisitofNextHop);
+							idsToVisitofNextHop.clear();
+						}
 						
 						//To get all records for citations >1000
 						/*int citedCount=Integer.parseInt(citationCount);
@@ -260,9 +292,9 @@ public class microsoftTest
 	   		for(JsonElement json:jsonarray){
 	   			try {
 	   				if(NUM_HOPS<TOTAL_HOPS){
-	   					if(!(idsToVisit.containsKey(json.getAsJsonObject().get("Id").toString()))|| 
+	   					if(!(idsToVisitofCurrentHop.containsKey(json.getAsJsonObject().get("Id").toString()))|| 
 	   							!(idsVisited.containsKey(json.getAsJsonObject().get("Id").toString()))){
-	   						idsToVisit.put( json.getAsJsonObject().get("Id").toString(),NUM_HOPS+1);
+	   						idsToVisitofNextHop.put( json.getAsJsonObject().get("Id").toString(),NUM_HOPS+1);
 	   					}
 		   				
 	   				}
@@ -274,6 +306,7 @@ public class microsoftTest
 			   		sb.append(',');
 			   		sb.append(json.getAsJsonObject().get("Id"));
 			   		sb.append(',');
+			   	
 			   		DateTimeFormatter dtf_ts = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 			   		LocalDateTime now = LocalDateTime.now();
 			   		sb.append(dtf_ts.format(now));
